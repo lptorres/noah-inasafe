@@ -7,11 +7,28 @@
 
 # hlsearch on (H) or off (h):
 ~h
+# Last Search Pattern:
+~MSle0~/fid = ogr
+
 # Command Line History (newest to oldest):
-:q
 :wq
+:q
+:e layers/views.py
+:e layers/models.py
+:w
+:e safe/storage/vector.py
+:0
+:4048
+:415
+:39
+:e layers/urls.py
 
 # Search String History (newest to oldest):
+?/fid = ogr
+?/read_from_file
+?/fid
+?/_ogr.Open
+?/_ogr
 
 # Expression History (newest to oldest):
 
@@ -20,23 +37,55 @@
 # Input Line History (newest to oldest):
 
 # Registers:
+"1	LINE	0
+	        print type(filename)
+"2	LINE	0
+	        print layer_file
+"3	LINE	0
+	    if layer_file:
+"4	LINE	0
+	        print filename
+"5	LINE	0
+	    if filename:
+"6	LINE	0
+	        print 'layer exists!'
+"7	LINE	0
+	    if layer:
+""-	CHAR	0
+	)
 
 # File marks:
-'0  1  0  ~/tornado/README.md
-'1  10  0  ~/tornado/README.md
-'2  48  0  ~/django/webandgis/layers/views.py
-'3  62  33  ~/django/webandgis/layers/views.py
-'4  1  0  ~/django/webandgis/layers/urls.py
-'5  1  0  ~/django/webandgis/webandgis/urls.py
-'6  25  0  ~/django/webandgis/README.md
+'0  39  55  ~/django/webandgis/layers/views.py
+'1  37  4  ~/django/webandgis/layers/views.py
+'2  415  8  ~/django/webandgis/safe/storage/vector.py
+'3  40  4  ~/django/webandgis/layers/views.py
+'4  40  23  ~/django/webandgis/layers/views.py
+'5  35  28  ~/django/webandgis/layers/views.py
+'6  1  0  ~/django/webandgis/layers/urls.py
+'7  1  0  ~/tornado/README.md
+'8  1  0  ~/tornado/webapp/main.py
+'9  10  0  ~/tornado/README.md
 
 # Jumplist (newest first):
+-'  39  55  ~/django/webandgis/layers/views.py
+-'  1  0  ~/django/webandgis/layers/views.py
+-'  37  4  ~/django/webandgis/layers/views.py
+-'  22  0  ~/django/webandgis/layers/models.py
+-'  34  12  ~/django/webandgis/layers/views.py
+-'  415  31  ~/django/webandgis/safe/storage/vector.py
+-'  529  8  ~/django/webandgis/safe/storage/vector.py
+-'  159  0  ~/django/webandgis/safe/storage/vector.py
+-'  1  0  ~/django/webandgis/safe/storage/vector.py
+-'  4048  9  /usr/lib/python2.7/dist-packages/osgeo/ogr.py
+-'  1  0  /usr/lib/python2.7/dist-packages/osgeo/ogr.py
+-'  40  4  ~/django/webandgis/layers/views.py
+-'  35  28  ~/django/webandgis/layers/views.py
+-'  1  0  ~/django/webandgis/layers/urls.py
 -'  1  0  ~/tornado/README.md
+-'  1  0  ~/tornado/webapp/main.py
 -'  10  0  ~/tornado/README.md
--'  48  0  ~/django/webandgis/layers/views.py
--'  1  0  ~/django/webandgis/layers/views.py
--'  62  33  ~/django/webandgis/layers/views.py
--'  1  0  ~/django/webandgis/layers/urls.py
+-'  49  0  ~/django/webandgis/layers/views.py
+-'  63  33  ~/django/webandgis/layers/views.py
 -'  1  0  ~/django/webandgis/webandgis/urls.py
 -'  25  0  ~/django/webandgis/README.md
 -'  1  0  ~/django/webandgis/README.md
@@ -47,7 +96,6 @@
 -'  1  0  ~/django/webandgis/README.md
 -'  25  0  ~/django/webandgis/README.md
 -'  1  0  ~/django/webandgis/README.md
--'  1  0  ~/django/webandgis/layers/urls.py
 -'  1  0  ~/django/webandgis/webandgis/urls.py
 -'  25  0  ~/django/webandgis/README.md
 -'  1  0  ~/django/webandgis/README.md
@@ -58,7 +106,6 @@
 -'  1  0  ~/django/webandgis/README.md
 -'  25  0  ~/django/webandgis/README.md
 -'  1  0  ~/django/webandgis/README.md
--'  1  0  ~/django/webandgis/layers/urls.py
 -'  1  0  ~/django/webandgis/webandgis/urls.py
 -'  25  0  ~/django/webandgis/README.md
 -'  1  0  ~/django/webandgis/README.md
@@ -69,7 +116,6 @@
 -'  1  0  ~/django/webandgis/README.md
 -'  25  0  ~/django/webandgis/README.md
 -'  1  0  ~/django/webandgis/README.md
--'  1  0  ~/django/webandgis/layers/urls.py
 -'  1  0  ~/django/webandgis/webandgis/urls.py
 -'  25  0  ~/django/webandgis/README.md
 -'  1  0  ~/django/webandgis/README.md
@@ -80,10 +126,6 @@
 -'  1  0  ~/django/webandgis/README.md
 -'  25  0  ~/django/webandgis/README.md
 -'  1  0  ~/django/webandgis/README.md
--'  48  0  ~/django/webandgis/layers/views.py
--'  1  0  ~/django/webandgis/layers/views.py
--'  62  33  ~/django/webandgis/layers/views.py
--'  1  0  ~/django/webandgis/layers/urls.py
 -'  1  0  ~/django/webandgis/webandgis/urls.py
 -'  25  0  ~/django/webandgis/README.md
 -'  1  0  ~/django/webandgis/README.md
@@ -94,7 +136,6 @@
 -'  1  0  ~/django/webandgis/README.md
 -'  25  0  ~/django/webandgis/README.md
 -'  1  0  ~/django/webandgis/README.md
--'  1  0  ~/django/webandgis/layers/urls.py
 -'  1  0  ~/django/webandgis/webandgis/urls.py
 -'  25  0  ~/django/webandgis/README.md
 -'  1  0  ~/django/webandgis/README.md
@@ -105,7 +146,6 @@
 -'  1  0  ~/django/webandgis/README.md
 -'  25  0  ~/django/webandgis/README.md
 -'  1  0  ~/django/webandgis/README.md
--'  1  0  ~/django/webandgis/layers/urls.py
 -'  1  0  ~/django/webandgis/webandgis/urls.py
 -'  25  0  ~/django/webandgis/README.md
 -'  1  0  ~/django/webandgis/README.md
@@ -116,27 +156,53 @@
 -'  1  0  ~/django/webandgis/README.md
 -'  25  0  ~/django/webandgis/README.md
 -'  1  0  ~/django/webandgis/README.md
--'  1  0  ~/django/webandgis/layers/urls.py
 -'  1  0  ~/django/webandgis/webandgis/urls.py
 -'  25  0  ~/django/webandgis/README.md
 -'  1  0  ~/django/webandgis/README.md
 -'  25  0  ~/django/webandgis/README.md
 -'  1  0  ~/django/webandgis/README.md
 -'  1  0  ~/django/webandgis/webandgis/urls.py
--'  25  0  ~/django/webandgis/README.md
--'  1  0  ~/django/webandgis/README.md
 -'  25  0  ~/django/webandgis/README.md
 -'  1  0  ~/django/webandgis/README.md
 
 # History of marks within files (newest to oldest):
 
+> ~/django/webandgis/layers/views.py
+	"	39	55
+	^	39	56
+	.	39	55
+	+	35	0
+	+	39	21
+	+	39	0
+	+	40	8
+	+	40	4
+	+	40	23
+	+	40	17
+	+	39	0
+	+	40	0
+	+	35	34
+	+	36	7
+	+	39	55
+
+> ~/django/webandgis/safe/storage/vector.py
+	"	415	31
+	.	415	31
+	+	415	13
+	+	415	31
+
+> ~/django/webandgis/layers/models.py
+	"	22	0
+
+> /usr/lib/python2.7/dist-packages/osgeo/ogr.py
+	"	4048	9
+
+> ~/django/webandgis/layers/urls.py
+	"	1	0
+
 > ~/tornado/README.md
 	"	1	0
 
-> ~/django/webandgis/layers/views.py
-	"	48	0
-
-> ~/django/webandgis/layers/urls.py
+> ~/tornado/webapp/main.py
 	"	1	0
 
 > ~/django/webandgis/webandgis/urls.py
