@@ -8,8 +8,8 @@
 # hlsearch on (H) or off (h):
 ~h
 # Command Line History (newest to oldest):
-:wq
 :q
+:wq
 
 # Search String History (newest to oldest):
 
@@ -22,13 +22,64 @@
 # Registers:
 
 # File marks:
-'0  48  0  ~/django/webandgis/layers/views.py
-'1  62  33  ~/django/webandgis/layers/views.py
-'2  1  0  ~/django/webandgis/layers/urls.py
-'3  1  0  ~/django/webandgis/webandgis/urls.py
-'4  25  0  ~/django/webandgis/README.md
+'0  1  0  ~/tornado/README.md
+'1  10  0  ~/tornado/README.md
+'2  48  0  ~/django/webandgis/layers/views.py
+'3  62  33  ~/django/webandgis/layers/views.py
+'4  1  0  ~/django/webandgis/layers/urls.py
+'5  1  0  ~/django/webandgis/webandgis/urls.py
+'6  25  0  ~/django/webandgis/README.md
 
 # Jumplist (newest first):
+-'  1  0  ~/tornado/README.md
+-'  10  0  ~/tornado/README.md
+-'  48  0  ~/django/webandgis/layers/views.py
+-'  1  0  ~/django/webandgis/layers/views.py
+-'  62  33  ~/django/webandgis/layers/views.py
+-'  1  0  ~/django/webandgis/layers/urls.py
+-'  1  0  ~/django/webandgis/webandgis/urls.py
+-'  25  0  ~/django/webandgis/README.md
+-'  1  0  ~/django/webandgis/README.md
+-'  25  0  ~/django/webandgis/README.md
+-'  1  0  ~/django/webandgis/README.md
+-'  1  0  ~/django/webandgis/webandgis/urls.py
+-'  25  0  ~/django/webandgis/README.md
+-'  1  0  ~/django/webandgis/README.md
+-'  25  0  ~/django/webandgis/README.md
+-'  1  0  ~/django/webandgis/README.md
+-'  1  0  ~/django/webandgis/layers/urls.py
+-'  1  0  ~/django/webandgis/webandgis/urls.py
+-'  25  0  ~/django/webandgis/README.md
+-'  1  0  ~/django/webandgis/README.md
+-'  25  0  ~/django/webandgis/README.md
+-'  1  0  ~/django/webandgis/README.md
+-'  1  0  ~/django/webandgis/webandgis/urls.py
+-'  25  0  ~/django/webandgis/README.md
+-'  1  0  ~/django/webandgis/README.md
+-'  25  0  ~/django/webandgis/README.md
+-'  1  0  ~/django/webandgis/README.md
+-'  1  0  ~/django/webandgis/layers/urls.py
+-'  1  0  ~/django/webandgis/webandgis/urls.py
+-'  25  0  ~/django/webandgis/README.md
+-'  1  0  ~/django/webandgis/README.md
+-'  25  0  ~/django/webandgis/README.md
+-'  1  0  ~/django/webandgis/README.md
+-'  1  0  ~/django/webandgis/webandgis/urls.py
+-'  25  0  ~/django/webandgis/README.md
+-'  1  0  ~/django/webandgis/README.md
+-'  25  0  ~/django/webandgis/README.md
+-'  1  0  ~/django/webandgis/README.md
+-'  1  0  ~/django/webandgis/layers/urls.py
+-'  1  0  ~/django/webandgis/webandgis/urls.py
+-'  25  0  ~/django/webandgis/README.md
+-'  1  0  ~/django/webandgis/README.md
+-'  25  0  ~/django/webandgis/README.md
+-'  1  0  ~/django/webandgis/README.md
+-'  1  0  ~/django/webandgis/webandgis/urls.py
+-'  25  0  ~/django/webandgis/README.md
+-'  1  0  ~/django/webandgis/README.md
+-'  25  0  ~/django/webandgis/README.md
+-'  1  0  ~/django/webandgis/README.md
 -'  48  0  ~/django/webandgis/layers/views.py
 -'  1  0  ~/django/webandgis/layers/views.py
 -'  62  33  ~/django/webandgis/layers/views.py
@@ -78,6 +129,9 @@
 -'  1  0  ~/django/webandgis/README.md
 
 # History of marks within files (newest to oldest):
+
+> ~/tornado/README.md
+	"	1	0
 
 > ~/django/webandgis/layers/views.py
 	"	48	0
