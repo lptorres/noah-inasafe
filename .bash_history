@@ -386,3 +386,26 @@ python
 clear
 python
 logout
+ls
+cd tornado/db_app/
+ls
+python main.py 
+vim main.py 
+vim main.py 
+python main.py 
+python main.py 
+python main.py 
+python main.py 
+python main.py 
+python main.py 
+python main.py 
+clear
+python main.py shell
+clear
+python
+psql example
+python main.py 
+clear
+python main.py 
+clear
+logout
