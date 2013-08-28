@@ -159,3 +159,230 @@ git commit --amend --reset-author
 git push origin master
 ls
 logout
+ls
+cd django/webandgis/data/
+ls
+clear
+cd ..
+git remote -v
+git pull
+ls
+cd data/
+ls
+clear
+ls
+cd ..
+ls
+rm webandgis.db 
+ls
+clear
+python manage.py syncdb
+ifconfig 
+python manage.py runserver 0.0.0.0:5000
+clear
+ls
+rm webandgis.db 
+cd media/
+ls
+cd uploads/
+ls
+rm 100yr_flooding.zip 
+ls
+rm buildings.zip flood.zip 
+ls
+clear
+cd ..
+ls
+cd layers/
+ls
+rm buildings/
+rm -rf buildings/
+rm -rf flood/
+ls
+clear
+cd ..
+cd ..
+python manage.py syncdb
+ls
+python manage.py runserver 0.0.0.0:5000
+ls
+cd media/
+ls
+cd layers/
+ls
+ls
+ls
+cd flood/
+ls
+cd raw/
+ls
+vim flood.shp 
+cd ..
+cd ..
+vim impact.json 
+clear
+logout
+ls
+yolk -l
+easy_install yolk
+clear
+sudo easy_install yolk
+yolk -l
+cd tornado/
+ls
+git fetch
+git remote -v
+cd ..
+ls
+clear
+sudo easy_install psycopg2
+psql
+clear
+sudo apt-get install postgresql
+sudo -u postgres
+sudo su -u postgres
+sudo su postgres
+clear
+sudo su postgres
+ls
+cd tornado/
+ls
+cd ..
+mkdir newfolder
+ls
+mv tornado newfolder/
+ls
+cd newfolder/
+ls
+mv tornado webSAFE
+ls
+mv webSAFE WebSAFE
+clear
+ls
+mv webSAFE WebSAFE
+cd ..
+ls
+clear
+mv newfolder tornado
+ls
+clear
+cd tornado/
+ls
+mkdir db_app
+ls
+cd db_app/
+ls
+vim
+python hello.py 
+clear
+ls
+rm hello.py 
+ls
+vim main.py
+python main.py 
+vim main.py 
+mkdir templates
+cd templates/
+ls
+vim index.html
+vim poem.html
+python ma
+cd ..
+python main.py 
+ls
+clear
+ls
+vim main.py 
+ls
+cd templates/
+ls
+mkdir static
+ls
+vim static/style.css
+ls
+mv static ~/tornado/db_app/
+ls
+cd ..
+ls
+clear
+python main.py 
+vim main.py 
+python main.py 
+vim main.py 
+python main.py 
+vim main.py 
+vim main.py 
+python main.py 
+clear
+yolk -h
+yolk -lq
+sudo easy_install psycopg2
+sudo apt-get install python-dev libpq-dev
+logout
+logout
+ls
+cd tornado/db_app/
+ls
+python main.py 
+ifconfig 
+ls
+clear
+ping google.com
+ping www.google.com
+clear
+ping 192.168.56.1
+clear
+vim main.py 
+vim main.py 
+python main.py 
+sqlalchemy
+cd ..
+cd ..
+ls
+cd ..
+cd ..
+ls
+cd lib
+l
+ls
+cd ..
+ls
+clear
+ls
+clear
+cd ..
+cd home/vagrant/
+ls
+psql example
+psql
+psql template0
+sudo su postgres
+createdb example -U vagrant
+ls
+psql example
+python
+sqlalchemy
+yolk -l
+sudo easy_install sqlalchemy
+python
+ls
+yolk -l
+sudo easy_install psycopg2
+clear
+logout
+yolk -l
+clear
+python
+ls
+cd tornado/db_app/
+ls
+vim main.py 
+python
+vim models.py
+python
+vim models.py
+python
+python
+clear
+python
+logout

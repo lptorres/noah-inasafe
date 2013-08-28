@@ -11,11 +11,16 @@
 ~MSle0~/fid = ogr
 
 # Command Line History (newest to oldest):
-:wq
 :q
+:36
+:wq
+:20
+:38
+:w
+:e templates/index.html
+:e hello.py
 :e layers/views.py
 :e layers/models.py
-:w
 :e safe/storage/vector.py
 :0
 :4048
@@ -37,36 +42,83 @@
 # Input Line History (newest to oldest):
 
 # Registers:
-"1	LINE	0
-	        print type(filename)
+"1	CHAR	0
+	<form method="post" action="/poem">
+	        <p>Plural noun<br><input type="text" name="noun1"</p>
+	        <p>Singular noun<br><input type="text" name="noun2"</p>
+	        <p>Verb (past tense)<br><input type="text" name="verb"</p>
+	        <p>Noun<br><input type="text" name="noun3"</p>
+	        <input type="submit">
+	        </form>
 "2	LINE	0
-	        print layer_file
+	
 "3	LINE	0
-	    if layer_file:
+	    tornado.ioloop.IOLoop.instance().start()
 "4	LINE	0
-	        print filename
+	    http_server.listen(options.port)
 "5	LINE	0
-	    if filename:
-"6	LINE	0
-	        print 'layer exists!'
-"7	LINE	0
-	    if layer:
+	    http_server = tornado.httpserver.HTTPServer(app)
+"6	CHAR	0
+	if __name__ == '__main__':
+	    tornado.options.parse_command_line()
+	    app = tornado.web.Application(
+	        handlers=[
+	            (r'/reverse/(\w+)', ReverseHandler),
+	            (r'/wrap', WrapHandler)
+	        ]
+	    )v
+	 
+"7	CHAR	0
+	geHandler(tornado.web.RequestHandler):
+	    def post(self):
+	        noun1 = self.get_argument('noun1')
+	        noun2 = self.get_argument('noun2')
+	        verb = self.get_argument('verb')
+	        noun3 = self.get_argument('noun3')
+	        self.render('poem.html', roads=noun1, wood=noun2, made=verb,
+	            d
+"8	LINE	0
+	        self.write(textwrap.fill(text, width))
+"9	LINE	0
+	        width = self.get_argument('width', 40)
 ""-	CHAR	0
-	)
+	m
 
 # File marks:
-'0  39  55  ~/django/webandgis/layers/views.py
-'1  37  4  ~/django/webandgis/layers/views.py
-'2  415  8  ~/django/webandgis/safe/storage/vector.py
-'3  40  4  ~/django/webandgis/layers/views.py
-'4  40  23  ~/django/webandgis/layers/views.py
-'5  35  28  ~/django/webandgis/layers/views.py
-'6  1  0  ~/django/webandgis/layers/urls.py
-'7  1  0  ~/tornado/README.md
-'8  1  0  ~/tornado/webapp/main.py
-'9  10  0  ~/tornado/README.md
+'0  1  0  ~/tornado/db_app/main.py
+'1  35  8  ~/tornado/db_app/main.py
+'2  5  61  ~/tornado/db_app/models.py
+'3  22  3  ~/tornado/db_app/main.py
+'4  8  23  ~/tornado/db_app/main.py
+'5  20  63  ~/tornado/db_app/main.py
+'6  38  69  ~/tornado/db_app/main.py
+'7  6  31  ~/tornado/db_app/templates/static/style.css
+'8  19  14  ~/tornado/db_app/templates/index.html
+'9  10  6  ~/tornado/db_app/templates/poem.html
 
 # Jumplist (newest first):
+-'  1  0  ~/tornado/db_app/main.py
+-'  35  8  ~/tornado/db_app/main.py
+-'  5  61  ~/tornado/db_app/models.py
+-'  1  0  ~/tornado/db_app/models.py
+-'  22  3  ~/tornado/db_app/main.py
+-'  8  23  ~/tornado/db_app/main.py
+-'  20  63  ~/tornado/db_app/main.py
+-'  38  69  ~/tornado/db_app/main.py
+-'  6  31  ~/tornado/db_app/templates/static/style.css
+-'  1  0  ~/tornado/db_app/templates/static/style.css
+-'  19  14  ~/tornado/db_app/templates/index.html
+-'  41  3  ~/tornado/db_app/main.py
+-'  10  6  ~/tornado/db_app/templates/poem.html
+-'  1  0  ~/tornado/db_app/templates/poem.html
+-'  21  6  ~/tornado/db_app/templates/index.html
+-'  1  0  ~/tornado/db_app/templates/index.html
+-'  43  43  ~/tornado/db_app/main.py
+-'  19  43  ~/tornado/db_app/hello.py
+-'  1  0  ~/tornado/db_app/hello.py
+-'  41  0  ~/django/webandgis/media/layers/impact.json
+-'  1  0  ~/django/webandgis/media/layers/impact.json
+-'  1  0  ~/django/webandgis/media/layers/flood/raw/flood.shp
 -'  39  55  ~/django/webandgis/layers/views.py
 -'  1  0  ~/django/webandgis/layers/views.py
 -'  37  4  ~/django/webandgis/layers/views.py
@@ -142,30 +194,91 @@
 -'  25  0  ~/django/webandgis/README.md
 -'  1  0  ~/django/webandgis/README.md
 -'  1  0  ~/django/webandgis/webandgis/urls.py
--'  25  0  ~/django/webandgis/README.md
--'  1  0  ~/django/webandgis/README.md
--'  25  0  ~/django/webandgis/README.md
--'  1  0  ~/django/webandgis/README.md
--'  1  0  ~/django/webandgis/webandgis/urls.py
--'  25  0  ~/django/webandgis/README.md
--'  1  0  ~/django/webandgis/README.md
--'  25  0  ~/django/webandgis/README.md
--'  1  0  ~/django/webandgis/README.md
--'  1  0  ~/django/webandgis/webandgis/urls.py
--'  25  0  ~/django/webandgis/README.md
--'  1  0  ~/django/webandgis/README.md
--'  25  0  ~/django/webandgis/README.md
--'  1  0  ~/django/webandgis/README.md
--'  1  0  ~/django/webandgis/webandgis/urls.py
--'  25  0  ~/django/webandgis/README.md
--'  1  0  ~/django/webandgis/README.md
--'  25  0  ~/django/webandgis/README.md
--'  1  0  ~/django/webandgis/README.md
--'  1  0  ~/django/webandgis/webandgis/urls.py
--'  25  0  ~/django/webandgis/README.md
--'  1  0  ~/django/webandgis/README.md
 
 # History of marks within files (newest to oldest):
+
+> ~/tornado/db_app/main.py
+	"	1	0
+	^	8	24
+	.	8	23
+	+	41	45
+	+	41	39
+	+	44	0
+	+	41	24
+	+	10	56
+	+	43	43
+	+	1	14
+	+	41	0
+	+	40	5
+	+	41	43
+	+	3	0
+	+	2	12
+	+	16	12
+	+	32	0
+	+	16	52
+	+	30	57
+	+	31	60
+	+	32	0
+	+	41	5
+	+	42	0
+	+	41	1
+	+	36	56
+	+	39	17
+	+	41	0
+	+	20	51
+	+	38	69
+	+	20	63
+	+	8	23
+
+> ~/tornado/db_app/models.py
+	"	5	61
+	^	5	62
+	.	5	61
+	+	5	61
+
+> ~/tornado/db_app/templates/static/style.css
+	"	6	31
+	^	6	32
+	.	6	31
+	+	6	31
+
+> ~/tornado/db_app/templates/index.html
+	"	19	14
+	^	19	15
+	.	19	14
+	+	22	0
+	+	9	35
+	+	21	6
+	+	5	35
+	+	6	3
+	+	5	8
+	+	4	7
+	+	8	27
+	+	20	0
+	+	11	21
+	+	13	7
+	+	12	8
+	+	19	14
+
+> ~/tornado/db_app/templates/poem.html
+	"	10	6
+	^	10	7
+	.	10	6
+	+	10	6
+	+	9	3
+	+	10	6
+
+> ~/tornado/db_app/hello.py
+	"	19	43
+	^	19	44
+	.	19	43
+	+	19	43
+
+> ~/django/webandgis/media/layers/impact.json
+	"	41	0
+
+> ~/django/webandgis/media/layers/flood/raw/flood.shp
+	"	1	0
 
 > ~/django/webandgis/layers/views.py
 	"	39	55

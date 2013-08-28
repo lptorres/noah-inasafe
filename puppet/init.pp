@@ -27,7 +27,7 @@ class inasafe {
     provider => 'apt'
   }
   
-  package { ['tornado', 'numpy']:
+  package { ['tornado', 'numpy', 'sqlalchemy', 'psycopg2']:
     ensure  => installed,
     provider => pip
   }
