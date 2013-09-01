@@ -1,205 +1,3 @@
-ls
-sudo poweroff
-ls
-yolk
-cd django/
-ls
-git clone https://github.com/lptorres/webandgis.git
-sudo apt-get install git
-git clone https://github.com/lptorres/webandgis.git 
-ls
-cd ..
-ls
-cd django/
-ls
-cd webandgis/
-ls
-logout
-ls
-cd django/
-ls
-cd webandgis/
-ls
-git pull
-ls
-cd ..
-ls
-cd webandgis/
-ls
-vim webandgis/settings.py 
-sudo apt-get install vim
-vim
-vim --fix-missing
-sudo apt-get install vim --fix-missing
-sudo apt-get install vim
-ifconfig
-clear
-logout
-ls
-cd django/
-ls
-cd webandgis/
-ls
-vim README.md 
-sudo apt-get install gdal-bin
-sudo pip install -e .
-ls
-ifconfig 
-ls
-python manage.py syncdb
-python manage.py runserver
-python manage.py runserver 0.0.0.0:8000
-ls
-clear
-ls
-vim webandgis/urls.py
-ls
-vim layers/urls.py
-python manage.py runserver 0.0.0.0:8000
-vim layers/views.py
-python manage.py runserver 0.0.0.0:8000
-logout
-cd tornado/
-ls
-vim README.md 
-git pull
-ls
-vim README.md 
-ls
-clear
-ls
-cd tornado/
-ls
-cat README.md 
-clear
-ls
-cd webapp/
-ls
-vim main.py 
-python main.py 0.0.0.0:8000
-ifconfig 
-python main.py
-logout
-ifconfig
-ls
-ifconfig
-logout
-ifconfig
-ifconfig
-cd tornado/
-ls
-python webapp/main.py 
-clear
-cd ..
-cd django/webandgis/
-ls
-python manage.py runserver
-python manage.py runserver 0.0.0.0:5000
-vim
-python manage.py runserver 0.0.0.0:5000
-clear
-ls
-cd media/
-ls
-cd layers/
-ls
-cd buildings/
-ls
-cd ..
-ls
-rm -rf 100-year-flooding/
-rm -rf buildings/
-rm -rf flood/
-ls
-clear
-cd ..
-ls
-cd uploads/
-ls
-rm -rf 100yr_flooding.zip 
-rm -rf buildings.zip 
-ls
-clear
-cd ,,
-cd ..
-cd ..
-ls
-clear
-python manage.py runserver 0.0.0.0:5000
-vim layers/views.py
-python manage.py runserver 0.0.0.0:5000
-vim
-vim
-python manage.py runserver 0.0.0.0:5000
-vim layers/views.py
-python manage.py runserver 0.0.0.0:5000
-clear
-python manage.py runserver 0.0.0.0:5000
-vim safe/storage/vector.py
-python manage.py runserver 0.0.0.0:5000
-vim layers/views.py
-vim safe/storage/vector.py
-python manage.py runserver 0.0.0.0:5000
-vim /usr/lib/python2.7/dist-packages/osgeo/ogr.py
-python manage.py runserver 0.0.0.0:5000
-vim safe/storage/vector.py
-python manage.py runserver 0.0.0.0:5000
-vim layers/views.py
-python manage.py runserver 0.0.0.0:5000
-ls
-git remote -v
-git push origin master
-git add -a
-clear
-git add -A
-git commit -m "Resolved TypeError by converting unicode types into string types"
-git config --global user.name "lptorres"
-git config --global user.email luisantonio.p.torres@gmail.com
-git commit --amend --reset-author
-git push origin master
-ls
-logout
-ls
-cd django/webandgis/data/
-ls
-clear
-cd ..
-git remote -v
-git pull
-ls
-cd data/
-ls
-clear
-ls
-cd ..
-ls
-rm webandgis.db 
-ls
-clear
-python manage.py syncdb
-ifconfig 
-python manage.py runserver 0.0.0.0:5000
-clear
-ls
-rm webandgis.db 
-cd media/
-ls
-cd uploads/
-ls
-rm 100yr_flooding.zip 
-ls
-rm buildings.zip flood.zip 
-ls
-clear
-cd ..
-ls
-cd layers/
-ls
-rm buildings/
-rm -rf buildings/
-rm -rf flood/
-ls
-clear
 cd ..
 cd ..
 python manage.py syncdb
@@ -408,4 +206,295 @@ python main.py
 clear
 python main.py 
 clear
+logout
+cd tornado/db_app/
+ls
+python
+logout
+ls
+cd django/
+ls
+cd webandgis/
+python manage.py runserver 0.0.0.0:5000
+logout
+cd django/webandgis/
+ls
+python manage.py runserver 0.0.0.0:5000
+clear
+logout
+cd django/webandgis/
+ls
+python manage.py runserver 0.0.0.0:5000
+clear
+cd ..
+cd webandgis/
+ls
+python manage.py runserver 0.0.0.0:5000
+logout
+cd django/
+ls
+django-admin.py startproject --template=https://github.com/pinax/pinax-project-account/zipball/master websafe
+ls
+cd web
+cd websafe/
+ls
+clear
+ls
+cat requirements.txt 
+vim requirements.txt 
+sudo easy_install django-user-accounts
+sudo sudo easy_install django-forms-bootstrap
+sudo easy_install metron
+sudo easy_install metron
+sudo easy_install eventlog
+sudo easy_install django-jsonfield
+clear
+ls
+psql createdb websafe -U ton
+psql createdb -U vagrant websafe
+clear
+createdb websafe -U vagrant
+ls
+vim
+python manage.py syncdb
+python manage.py runserver 0.0.0.0:5000
+ls
+clear
+ls
+django-admin.py startapp layers
+python manage.py startapp layers
+clear
+django-admin.py startapp layer_manager
+django-admin.py startapp calculate
+ls
+cd layer_manager/
+;s
+ls
+clear
+ls
+cd ..
+ls
+ls
+cd ..
+cd webandgis/
+ls
+cd media/
+ls
+cd layers/
+ls
+cd ..
+cd uploads/
+ls
+clear
+cd ..
+ls
+cd ..
+ls
+cd data/
+ls
+cd ..
+ls
+clear
+cd media/layers/flood/
+ls
+clear
+cd raw/
+ls
+python
+ls /usr/local/lib/python2.7/site-packages/
+ls
+clear
+ls /usr/local/lib/python2.7/site-packages/
+clear
+python
+logout
+ls
+cd django/websafe/
+ls
+django-admin.py startapp testapp
+cd testapp/
+ls
+cd ..
+ls
+python manage.py syncdb
+python manage.py runserver 0.0.0.0:5000
+python manage.py runserver 0.0.0.0:5000
+clear
+python manage.py runserver 0.0.0.0:5000
+clear
+ls
+cd testapp/
+ls
+cd ..
+ls
+clear
+python manage.py runserver 0.0.0.0:5000
+python manage.py runserver 0.0.0.0:5000
+clear
+python manage.py syncdb
+python manage.py runserver 0.0.0.0:5000
+python manage.py syncdb
+ls
+python manage.py syncdb
+ls
+mkdir media
+python manage.py runserver 0.0.0.0:5000
+vim websafe/settings.py
+python manage.py runserver 0.0.0.0:5000
+psql websafe 
+clear
+python manage.py runserver 0.0.0.0:5000
+python manage.py runserver 0.0.0.0:5000
+clear
+python manage.py syncdb
+python manage.py runserver 0.0.0.0:5000
+python
+python manage.py runserver 0.0.0.0:5000
+python manage.py syncdb
+python manage.py runserver 0.0.0.0:5000
+python manage.py runserver 0.0.0.0:5000
+python
+python manage.py runserver 0.0.0.0:5000
+ls
+cd..
+ls
+cd ..
+ls
+clear
+cd webandgis/data/
+ls
+cd ..
+cd data/
+ls
+clear
+ls
+clear
+python
+ls
+cd ..
+ls
+clear
+python
+sudo easy_install django-braces
+sudo easy install argparse
+sudo easy_install argparse
+sudo easy_install distribute
+sudo easy_install dj-database-url
+sudo easy_install dj-static
+sudo easy_install django-appconf
+sudo easy_install django-forms-bootstrap
+sudo easy_install django-jsonfield
+cd ..
+cd websafe/
+ls
+clear
+vim websafe/settings.py
+python manage.py syncdb
+python manage.py runserver 0.0.0.0:5000
+python
+python manage.py runserver 0.0.0.0:5000
+python manage.py runserver 0.0.0.0:5000
+python manage.py runserver 0.0.0.0:5000
+python manage.py runserver 0.0.0.0:5000
+python manage.py runserver 0.0.0.0:5000
+logout
+cd django/websafe/
+ls
+clear
+python manage.py runserver 0.0.0.0:5000
+python manage.py syncdb
+python manage.py runserver 0.0.0.0:5000
+clear
+dpkg-reconfigure tzdata
+sudo dpkg-reconfigure tzdata
+python manage.py runserver 0.0.0.0:5000
+logout
+cd django/websafe/
+ls
+vim
+ls
+vim layer_manager/models.py
+python manage.py runserver 0.0.0.0:5000
+ls
+clear
+ls
+python manage.py syncdb
+python manage.py syncdb
+python manage.py runserver 0.0.0.0:5000
+python manage.py runserver 0.0.0.0:5000
+python manage.py syncdb
+python manage.py runserver 0.0.0.0:5000
+logout
+cd django/websafe/
+lc
+ls
+clear
+python manage.py runserver 0.0.0.0:5000
+clear
+python manage.py syncdb
+python manage.py runserver 0.0.0.0:5000
+ls
+clear
+dropdb websafe
+psql websafe
+createdb websafe -U vagrant
+python manage.py syncdb
+python manage.py runserver 0.0.0.0:5000
+psql websafe
+python
+python manage.py runserver 0.0.0.0:5000
+dropdb websafe
+createdb websafe -U vagrant
+python manage.py syncdb
+python manage.py runserver 0.0.0.0:5000
+dropdb websafe
+createdb websafe -U vagrant
+createdb websafe -U vagrant
+python manage.py syncdb
+ls
+cd ..
+ls
+cd web
+cd webandgis/
+ls
+clear
+python manage.py runserver 0.0.0.0:5000
+cd ..
+ls
+cd websafe/
+ls
+clear
+dropdb websafe
+createdb websafe -U vagrant
+python manage.py syncdb
+TypeError: Error when calling the metaclass bases
+    unbound method contribute_to_class() must be called with HazardManager instance as first argument (got ModelBase instance instead)
+TypeError: Error when calling the metaclass bases
+    unbound method contribute_to_class() must be called with HazardManager instance as first argument (got ModelBase instance instead)
+python manage.py syncdb
+python manage.py runserver 0.0.0.0:5000
+python manage.py runserver 0.0.0.0:5000
+python manage.py shell
+python manage.py shell
+python manage.py shell
+dropdb websafe
+createdb websafe -U vagrant
+python manage.py syncdb
+python manage.py syncdb
+python manage.py syncdb
+python manage.py runserver 0.0.0.0:5000
+clear
+python shell
+python manage.py shell
+python manage.py runserver 0.0.0.0:5000
+clear
+python manage.py shell
+python
+python manage.py shell
+python manage.py shell
+python manage.py shell
+python manage.py runserver 0.0.0.0:5000
+python manage.py runserver 0.0.0.0:5000
+python manage.py runserver 0.0.0.0:5000
+python manage.py runserver 0.0.0.0:5000
 logout

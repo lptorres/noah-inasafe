@@ -1,0 +1,12 @@
+{% extends "site_base.html" %}
+
+{% block body %}
+    <h2>Layers</h2>
+    <ul>
+        {% for layer in object_list %}
+            <li>{{ layer.name }}</li>
+        {% empty %}
+            <p>Sorry, no layers here!</p>
+        {% endfor %}
+    </ul>
+{% endblock %}

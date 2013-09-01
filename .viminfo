@@ -11,9 +11,10 @@
 ~MSle0~/fid = ogr
 
 # Command Line History (newest to oldest):
-:q
-:36
 :wq
+:q
+:e websafe/settings.py
+:36
 :20
 :38
 :w
@@ -85,18 +86,26 @@
 	m
 
 # File marks:
-'0  1  0  ~/tornado/db_app/main.py
-'1  35  8  ~/tornado/db_app/main.py
-'2  5  61  ~/tornado/db_app/models.py
-'3  22  3  ~/tornado/db_app/main.py
-'4  8  23  ~/tornado/db_app/main.py
-'5  20  63  ~/tornado/db_app/main.py
-'6  38  69  ~/tornado/db_app/main.py
-'7  6  31  ~/tornado/db_app/templates/static/style.css
-'8  19  14  ~/tornado/db_app/templates/index.html
-'9  10  6  ~/tornado/db_app/templates/poem.html
+'0  85  8  ~/django/websafe/layer_manager/models.py
+'1  105  0  ~/django/websafe/websafe/settings.py
+'2  144  19  ~/django/websafe/websafe/settings.py
+'3  43  0  ~/django/websafe/websafe/settings.py
+'4  18  38  ~/django/websafe/websafe/settings.py
+'5  1  0  ~/django/websafe/requirements.txt
+'6  1  0  ~/tornado/db_app/main.py
+'7  35  8  ~/tornado/db_app/main.py
+'8  5  61  ~/tornado/db_app/models.py
+'9  22  3  ~/tornado/db_app/main.py
 
 # Jumplist (newest first):
+-'  85  8  ~/django/websafe/layer_manager/models.py
+-'  1  0  ~/django/websafe/layer_manager/models.py
+-'  105  0  ~/django/websafe/websafe/settings.py
+-'  1  0  ~/django/websafe/websafe/settings.py
+-'  144  19  ~/django/websafe/websafe/settings.py
+-'  43  0  ~/django/websafe/websafe/settings.py
+-'  18  38  ~/django/websafe/websafe/settings.py
+-'  1  0  ~/django/websafe/requirements.txt
 -'  1  0  ~/tornado/db_app/main.py
 -'  35  8  ~/tornado/db_app/main.py
 -'  5  61  ~/tornado/db_app/models.py
@@ -188,14 +197,20 @@
 -'  1  0  ~/django/webandgis/README.md
 -'  25  0  ~/django/webandgis/README.md
 -'  1  0  ~/django/webandgis/README.md
--'  1  0  ~/django/webandgis/webandgis/urls.py
--'  25  0  ~/django/webandgis/README.md
--'  1  0  ~/django/webandgis/README.md
--'  25  0  ~/django/webandgis/README.md
--'  1  0  ~/django/webandgis/README.md
--'  1  0  ~/django/webandgis/webandgis/urls.py
 
 # History of marks within files (newest to oldest):
+
+> ~/django/websafe/layer_manager/models.py
+	"	85	8
+
+> ~/django/websafe/websafe/settings.py
+	"	105	0
+	^	144	20
+	.	144	19
+	+	144	19
+
+> ~/django/websafe/requirements.txt
+	"	1	0
 
 > ~/tornado/db_app/main.py
 	"	1	0
