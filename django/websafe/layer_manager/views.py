@@ -27,7 +27,7 @@ class LayerUploadView(LoginRequiredMixin, PermissionRequiredMixin,
 
     permission_required = "auth.change_user"
     model = Layer
-    #form_class = LayerUploadForm 
+   # form_class = LayerUploadForm 
     action = "uploaded"
 
 
@@ -39,11 +39,3 @@ class LayerListView(ListView):
 class LayerDetailView(DetailView):
 
     model = Layer
-
-    def get_context_data(self, **kwargs):
-        context = super(LayerDetailView, self).get_context_data(**kwargs)
-        index = self.kwargs['slug']
-        me = Layer.objects.get(slug=index)
-        
-        context['sadness'] = me
-        return context

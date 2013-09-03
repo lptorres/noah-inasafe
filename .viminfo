@@ -8,7 +8,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/fid = ogr
+~MSle0~/store
 
 # Command Line History (newest to oldest):
 :wq
@@ -30,6 +30,7 @@
 :e layers/urls.py
 
 # Search String History (newest to oldest):
+?/store
 ?/fid = ogr
 ?/read_from_file
 ?/fid
@@ -43,7 +44,11 @@
 # Input Line History (newest to oldest):
 
 # Registers:
-"1	CHAR	0
+"1	LINE	0
+	# Create your views here.
+"2	LINE	0
+	# Create your models here.
+"3	CHAR	0
 	<form method="post" action="/poem">
 	        <p>Plural noun<br><input type="text" name="noun1"</p>
 	        <p>Singular noun<br><input type="text" name="noun2"</p>
@@ -51,15 +56,15 @@
 	        <p>Noun<br><input type="text" name="noun3"</p>
 	        <input type="submit">
 	        </form>
-"2	LINE	0
-	
-"3	LINE	0
-	    tornado.ioloop.IOLoop.instance().start()
 "4	LINE	0
-	    http_server.listen(options.port)
+	
 "5	LINE	0
+	    tornado.ioloop.IOLoop.instance().start()
+"6	LINE	0
+	    http_server.listen(options.port)
+"7	LINE	0
 	    http_server = tornado.httpserver.HTTPServer(app)
-"6	CHAR	0
+"8	CHAR	0
 	if __name__ == '__main__':
 	    tornado.options.parse_command_line()
 	    app = tornado.web.Application(
@@ -69,7 +74,7 @@
 	        ]
 	    )v
 	 
-"7	CHAR	0
+"9	CHAR	0
 	geHandler(tornado.web.RequestHandler):
 	    def post(self):
 	        noun1 = self.get_argument('noun1')
@@ -78,30 +83,36 @@
 	        noun3 = self.get_argument('noun3')
 	        self.render('poem.html', roads=noun1, wood=noun2, made=verb,
 	            d
-"8	LINE	0
-	        self.write(textwrap.fill(text, width))
-"9	LINE	0
-	        width = self.get_argument('width', 40)
 ""-	CHAR	0
-	m
+	l
 
 # File marks:
-'0  85  8  ~/django/websafe/layer_manager/models.py
-'1  105  0  ~/django/websafe/websafe/settings.py
-'2  144  19  ~/django/websafe/websafe/settings.py
-'3  43  0  ~/django/websafe/websafe/settings.py
-'4  18  38  ~/django/websafe/websafe/settings.py
-'5  1  0  ~/django/websafe/requirements.txt
-'6  1  0  ~/tornado/db_app/main.py
-'7  35  8  ~/tornado/db_app/main.py
-'8  5  61  ~/tornado/db_app/models.py
-'9  22  3  ~/tornado/db_app/main.py
+'0  6  29  ~/django/websafe/layer_manager/admin.py
+'1  2  29  ~/django/websafe/testapp/models.py
+'2  145  13  ~/django/websafe/websafe/settings.py
+'3  1  0  ~/django/websafe/testapp/urls.py
+'4  23  26  ~/django/websafe/testapp/models.py
+'5  10  20  ~/django/websafe/testapp/views.py
+'6  7  0  ~/django/websafe/testapp/urls.py
+'7  85  8  ~/django/websafe/layer_manager/models.py
+'8  105  0  ~/django/websafe/websafe/settings.py
+'9  144  19  ~/django/websafe/websafe/settings.py
 
 # Jumplist (newest first):
+-'  6  29  ~/django/websafe/layer_manager/admin.py
+-'  1  0  ~/django/websafe/layer_manager/admin.py
+-'  2  29  ~/django/websafe/testapp/models.py
+-'  1  0  ~/django/websafe/testapp/models.py
+-'  145  13  ~/django/websafe/websafe/settings.py
+-'  1  0  ~/django/websafe/websafe/settings.py
+-'  1  0  ~/django/websafe/testapp/urls.py
+-'  23  26  ~/django/websafe/testapp/models.py
+-'  10  20  ~/django/websafe/testapp/views.py
+-'  1  0  ~/django/websafe/testapp/views.py
+-'  7  0  ~/django/websafe/testapp/urls.py
 -'  85  8  ~/django/websafe/layer_manager/models.py
 -'  1  0  ~/django/websafe/layer_manager/models.py
 -'  105  0  ~/django/websafe/websafe/settings.py
--'  1  0  ~/django/websafe/websafe/settings.py
 -'  144  19  ~/django/websafe/websafe/settings.py
 -'  43  0  ~/django/websafe/websafe/settings.py
 -'  18  38  ~/django/websafe/websafe/settings.py
@@ -187,27 +198,56 @@
 -'  1  0  ~/django/webandgis/README.md
 -'  25  0  ~/django/webandgis/README.md
 -'  1  0  ~/django/webandgis/README.md
--'  1  0  ~/django/webandgis/webandgis/urls.py
--'  25  0  ~/django/webandgis/README.md
--'  1  0  ~/django/webandgis/README.md
--'  25  0  ~/django/webandgis/README.md
--'  1  0  ~/django/webandgis/README.md
--'  1  0  ~/django/webandgis/webandgis/urls.py
--'  25  0  ~/django/webandgis/README.md
--'  1  0  ~/django/webandgis/README.md
--'  25  0  ~/django/webandgis/README.md
--'  1  0  ~/django/webandgis/README.md
 
 # History of marks within files (newest to oldest):
 
-> ~/django/websafe/layer_manager/models.py
-	"	85	8
+> ~/django/websafe/layer_manager/admin.py
+	"	6	29
+	^	6	30
+	.	6	29
+	+	4	0
+	+	3	35
+	+	6	29
+
+> ~/django/websafe/testapp/models.py
+	"	2	29
+	^	2	30
+	.	2	29
+	+	24	0
+	+	15	5
+	+	4	42
+	+	8	18
+	+	23	25
+	+	2	29
+	y	23	24
 
 > ~/django/websafe/websafe/settings.py
-	"	105	0
-	^	144	20
-	.	144	19
+	"	145	13
+	^	145	14
+	.	145	13
 	+	144	19
+	+	145	13
+
+> ~/django/websafe/testapp/urls.py
+	"	1	0
+	^	7	1
+	.	7	0
+	+	7	0
+
+> ~/django/websafe/testapp/views.py
+	"	10	20
+	^	10	21
+	.	11	0
+	+	1	0
+	+	9	17
+	+	5	30
+	+	9	30
+	+	7	0
+	+	6	20
+	+	11	0
+
+> ~/django/websafe/layer_manager/models.py
+	"	85	8
 
 > ~/django/websafe/requirements.txt
 	"	1	0

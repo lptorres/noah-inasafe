@@ -4,6 +4,7 @@ import errno
 import glob
 from datetime import datetime, timedelta
 
+from django.core.urlresolvers import reverse
 from django.core.files.storage import FileSystemStorage
 from django.db import models
 from django.db.models.query import QuerySet
@@ -64,7 +65,6 @@ class Layer(models.Model):
     description = models.TextField(null=True, blank=True)
     bbox = models.CharField(max_length=255, null=True, blank=True)
     shapefile = models.FileField(storage=OverwriteStorage(), 
-        null=True, blank=True,
         upload_to='uploads', help_text="""Zip file containing the shapefile
         (mandatory files are: *.shp, *.shx, *.dbf)"""
     )
@@ -73,14 +73,14 @@ class Layer(models.Model):
         ('E', 'Exposure'),
         )
     )
-    date_added = models.DateTimeField(null=True, blank=True, editable=False)
+    date_added = models.DateTimeField(auto_now_add=True)
     slug = models.SlugField(editable=False)
     
     def __unicode__(self):
         return self.name
         
     def get_absolute_url(self):
-        return reverse("layer_detail", kwargs={"slug": self.slug})
+        return reverse("layers:detail", kwargs={"slug": self.slug})
         
 def create_folder(path):
     try:
@@ -102,7 +102,7 @@ def layer_handler(sender, instance, *args, **kwargs):
     
     now = datetime.utcnow() +timedelta(hours=8)    
     to_slug = instance.name + now.strftime('%Y%m%d%H%M%S')
-    instance.added = now
+    instance.date_added = now
     instance.slug = slugify(to_slug)
     
     # Deletes an existing layer with the same slug name

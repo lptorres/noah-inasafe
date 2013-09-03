@@ -1,15 +1,3 @@
-cd ..
-cd ..
-python manage.py syncdb
-ls
-python manage.py runserver 0.0.0.0:5000
-ls
-cd media/
-ls
-cd layers/
-ls
-ls
-ls
 cd flood/
 ls
 cd raw/
@@ -496,5 +484,17 @@ python manage.py shell
 python manage.py runserver 0.0.0.0:5000
 python manage.py runserver 0.0.0.0:5000
 python manage.py runserver 0.0.0.0:5000
+python manage.py runserver 0.0.0.0:5000
+logout
+ls
+cd django/
+ls
+cd webandgis/
+ls
+python manage.py runserver 0.0.0.0:5000
+cd ..
+cd websafe/
+ls
+clear
 python manage.py runserver 0.0.0.0:5000
 logout

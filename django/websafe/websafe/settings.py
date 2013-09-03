@@ -142,6 +142,7 @@ INSTALLED_APPS = [
     "websafe",
     "layer_manager",
     "calculate",
+    "testapp",
 ]
 
 # A sample logging configuration. The only tangible logging

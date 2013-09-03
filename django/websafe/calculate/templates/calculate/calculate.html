@@ -1,9 +1,0 @@
-{% extends "site_base.html %}
-
-{% block body %}
-<h2>Select data to calculate</h2>
-<form action="" method="post">{% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" value="Calculate" />
-</form>
-{% endblock %}

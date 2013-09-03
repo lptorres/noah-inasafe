@@ -17,7 +17,7 @@ class LayerUploadForm(forms.ModelForm):
         print cleaned_data['name']
         #First check if the user uploaded a file (any)
         if not (cleaned_data['shapefile']):
-            raise forms.ValidationError("Error! You did not upload a balls file!")
+            raise forms.ValidationError("Error! You did not upload a zip file!")
         
         #Now check if the user uploaded a zip file
         print shapefile

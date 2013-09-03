@@ -1,6 +1,6 @@
 #calculate/urls.py
 from django.conf.urls import patterns, include, url
-from calculate.views import CalculateView, ResultsView, TestView
+from calculate.views import CalculateView, ResultsView
 
 urlpatterns = patterns('',
     url(r'^$', CalculateView.as_view(), name='calculate'),

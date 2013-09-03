@@ -1,10 +1,24 @@
 {% extends "theme_base.html" %}
-
-{% load metron_tags %}
 {% load i18n %}
+{% load url from future %}
 
 {% block extra_head_base %}
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
     {% block extra_head %}{% endblock %}
+{% endblock %}
+
+{% block nav %}
+    <ul class="nav">
+        <li id="tab_first">
+            <a href="{% url 'home' %}">Home</a>
+        </li>
+        <li id="tab_second">
+            <a href="{% url 'layers:index' %}">Layers</a>
+        </li>
+        <li id="tab_third">
+            <a href="{% url 'calculate:calculate' %}">Calculate</a>
+        </li>
+    </ul>
 {% endblock %}
 
 {% block footer %}
@@ -12,6 +26,5 @@
 {% endblock %}
 
 {% block extra_body_base %}
-    {% analytics %}
     {% block extra_body %}{% endblock %}
 {% endblock %}
