@@ -1,66 +1,47 @@
-import zipfile
-import os
+"""
+
+layer_manager/models.py
+
+This file contains the models for the layer_manager app, and receivers for
+post-processing.
+
+"""
+
+
 import errno
 import glob
+import os
+import zipfile
+
+from subprocess import call
 from datetime import datetime, timedelta
 
+from django.conf import settings
+from django.contrib.gis.gdal import DataSource
 from django.core.urlresolvers import reverse
 from django.core.files.storage import FileSystemStorage
+from django.core.exceptions import ValidationError
 from django.db import models
 from django.db.models.query import QuerySet
 from django.dispatch import receiver
-from django.conf import settings
-from django.core.exceptions import ValidationError
-from django.contrib.gis.gdal import DataSource
 from django.template.defaultfilters import slugify
-from subprocess import call
 
 
 class OverwriteStorage(FileSystemStorage):
-
+    """
+    A FileSystemStorage type that the FileField in the Layer model will use. This
+    custom FileSystemStorage type will overwrite any file with the same filename.
+    """
     def get_available_name(self, name):
         if self.exists(name):
             os.remove(os.path.join(settings.MEDIA_ROOT, name))
         return name
 
-def zip_validator(file):
-        #First check if the user uploaded a file (any)
-        if not (file):
-            raise ValidationError("Error! You did not upload a balls file!")
         
-        #Now check if the user uploaded a zip file
-
-        if file[-4:] != '.zip':
-            raise ValidationError("""Error! You did not upload a zip
-                file!""")
-            
-        zip = zipfile.ZipFile(file)
-        
-        #Check if the zip file is empty
-        if len(zip.namelist()) == 0:
-            raise ValidationError("""Error! You uploaded an empty
-                zip file!""")
-       
-       #Raise an error if the zip does not contain the required file types
-        required = ['.shp', '.shx', '.dbf']
-        for ext in required:
-            if count[ext] == 0:
-                msg = "Error! The zip file does not contain a %s file." % ext
-                raise ValidationError(msg)
-       
-        #Count the number of files per file type
-        count = collections.Counter()
-        for filename in zip.namelist():
-            name, ext = os.path.splitext('*')
-            count[ext] += 1
-        
-        #Raise an error if the zip contains more than 1 file per file type
-        for ext in count:
-            if count[ext] > 1:
-                msg = "Error! Cannot have more than 1 %s file." % ext
-                raise ValidationError(msg)   
-
 class Layer(models.Model):
+    """
+    A Layer model for abstracting a shapefile.
+    """
     name = models.CharField(max_length=255)
     description = models.TextField(null=True, blank=True)
     bbox = models.CharField(max_length=255, null=True, blank=True)
@@ -82,7 +63,11 @@ class Layer(models.Model):
     def get_absolute_url(self):
         return reverse("layers:detail", kwargs={"slug": self.slug})
         
+        
 def create_folder(path):
+    """
+    A method to create a folder on the system for uploads.
+    """
     try:
         os.makedirs(path)
     # This only works for Python > 2.5
@@ -96,7 +81,9 @@ def create_folder(path):
 @receiver(models.signals.pre_save, sender=Layer)
 def layer_handler(sender, instance, *args, **kwargs):
     """
-    Post process the uploaded layer
+    Post process the uploaded layer.
+    Assign a date & time to the instance's 'date_added' attribute
+    Create a slug for the instance
     Get the bounding box information and save it with the model
     """
     
@@ -123,15 +110,15 @@ def layer_handler(sender, instance, *args, **kwargs):
         outfile.write(the_zip.read(name))
         outfile.close()
 
-    # Check if it is vector or raster
-    # if it has a .shp file, it is vector :)
+    # Get the .shp file
     os.chdir(zip_out)
     shapefiles = glob.glob('*.shp')
 
     if len(shapefiles) > 0:
-        # this means it is a vector
-
-        # FIXME(This is a very weak way to get the shapefile)
+        """
+        We can be sure that there is only one shapefile in this list since
+        we already validated that in the clean method of LayerUploadForm
+        """
         shapefile = shapefiles[0]
 
         # Use ogr to inspect the file and get the bounding box
