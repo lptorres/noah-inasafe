@@ -8,7 +8,10 @@ websafe project.
 """
 
 
+import os
+
 from django import forms
+from django.conf import settings
 from django.contrib import messages
 from django.views.generic import ListView, DetailView, CreateView
 
@@ -69,3 +72,14 @@ class LayerDetailView(DetailView):
     in the settings file.
     """
     model = Layer
+    
+    def get_context_data(self, **kwargs):
+        context = super(LayerDetailView, self).get_context_data(**kwargs)
+        
+        #Get the slug from self.kwargs and then get the geojson
+        layer_slug = self.kwargs['slug']
+        layer_folder = os.path.join(settings.MEDIA_URL, 'layers', layer_slug)
+        geometry_json = os.path.join(layer_folder, 'raw', 'geometry.json')
+        context['geojson'] = geometry_json
+        
+        return context

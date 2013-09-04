@@ -1,71 +1,3 @@
-cd flood/
-ls
-cd raw/
-ls
-vim flood.shp 
-cd ..
-cd ..
-vim impact.json 
-clear
-logout
-ls
-yolk -l
-easy_install yolk
-clear
-sudo easy_install yolk
-yolk -l
-cd tornado/
-ls
-git fetch
-git remote -v
-cd ..
-ls
-clear
-sudo easy_install psycopg2
-psql
-clear
-sudo apt-get install postgresql
-sudo -u postgres
-sudo su -u postgres
-sudo su postgres
-clear
-sudo su postgres
-ls
-cd tornado/
-ls
-cd ..
-mkdir newfolder
-ls
-mv tornado newfolder/
-ls
-cd newfolder/
-ls
-mv tornado webSAFE
-ls
-mv webSAFE WebSAFE
-clear
-ls
-mv webSAFE WebSAFE
-cd ..
-ls
-clear
-mv newfolder tornado
-ls
-clear
-cd tornado/
-ls
-mkdir db_app
-ls
-cd db_app/
-ls
-vim
-python hello.py 
-clear
-ls
-rm hello.py 
-ls
-vim main.py
-python main.py 
 vim main.py 
 mkdir templates
 cd templates/
@@ -496,5 +428,73 @@ cd ..
 cd websafe/
 ls
 clear
+python manage.py runserver 0.0.0.0:5000
+logout
+cd django/websafe/
+ls
+python manage.py runserver 0.0.0.0:5000
+python manage.py shell
+psql websafe
+ls
+django-admin.py startapp testapp
+ls
+cd testapp
+ls
+vim models.py 
+vim urls.py
+vim views.py 
+vim models.py 
+vim urls.py 
+cd ..
+vim websafe/settings.py
+python manage.py syncdb
+vim testapp/models.py
+python manage.py syncdb
+python manage.py runserver 0.0.0.0:5000
+python manage.py shell
+ls
+vim layer_manager/admin.py
+python manage.py syncdb
+python manage.py runserver 0.0.0.0:5000
+python
+ls
+clear
+python
+python manage.py runserver 0.0.0.0:5000
+python manage.py runserver 0.0.0.0:5000
+python manage.py runserver 0.0.0.0:5000
+clear
+dropdb websafe
+createdb websafe -U vagrant
+python manage.py syncdb
+python manage.py runserver 0.0.0.0:5000
+clear
+python
+python manage.py shell
+python manage.py runserver 0.0.0.0:5000
+clear
+python
+python manage.py runserver 0.0.0.0:5000
+cd ..
+cd webandgis/data/
+ls
+clear
+python
+cd ~/django/websafe/
+python manage.py runserver 0.0.0.0:5000
+python manage.py runserver 0.0.0.0:5000
+python manage.py runserver 0.0.0.0:5000
+python manage.py runserver 0.0.0.0:5000
+python manage.py runserver 0.0.0.0:5000
+python manage.py runserver 0.0.0.0:5000
+python manage.py shell
+python manage.py runserver 0.0.0.0:5000
+logout
+cd django/websafe/
+python manage.py runserver 0.0.0.0:5000
+sudo easy_install django_leaflet
+python manage.py runserver 0.0.0.0:5000
+logout
+cd django/websafe/
 python manage.py runserver 0.0.0.0:5000
 logout
