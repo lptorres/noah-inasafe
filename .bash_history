@@ -1,105 +1,3 @@
-vim main.py 
-mkdir templates
-cd templates/
-ls
-vim index.html
-vim poem.html
-python ma
-cd ..
-python main.py 
-ls
-clear
-ls
-vim main.py 
-ls
-cd templates/
-ls
-mkdir static
-ls
-vim static/style.css
-ls
-mv static ~/tornado/db_app/
-ls
-cd ..
-ls
-clear
-python main.py 
-vim main.py 
-python main.py 
-vim main.py 
-python main.py 
-vim main.py 
-vim main.py 
-python main.py 
-clear
-yolk -h
-yolk -lq
-sudo easy_install psycopg2
-sudo apt-get install python-dev libpq-dev
-logout
-logout
-ls
-cd tornado/db_app/
-ls
-python main.py 
-ifconfig 
-ls
-clear
-ping google.com
-ping www.google.com
-clear
-ping 192.168.56.1
-clear
-vim main.py 
-vim main.py 
-python main.py 
-sqlalchemy
-cd ..
-cd ..
-ls
-cd ..
-cd ..
-ls
-cd lib
-l
-ls
-cd ..
-ls
-clear
-ls
-clear
-cd ..
-cd home/vagrant/
-ls
-psql example
-psql
-psql template0
-sudo su postgres
-createdb example -U vagrant
-ls
-psql example
-python
-sqlalchemy
-yolk -l
-sudo easy_install sqlalchemy
-python
-ls
-yolk -l
-sudo easy_install psycopg2
-clear
-logout
-yolk -l
-clear
-python
-ls
-cd tornado/db_app/
-ls
-vim main.py 
-python
-vim models.py
-python
-vim models.py
-python
 python
 clear
 python
@@ -496,5 +394,107 @@ sudo easy_install django_leaflet
 python manage.py runserver 0.0.0.0:5000
 logout
 cd django/websafe/
+python manage.py runserver 0.0.0.0:5000
+logout
+ls
+cd django/websafe/
+clear
+cd ..
+ls
+clear
+cd ..
+ls
+git add -A
+dropdb websafe
+cd django/websafe/
+ls
+cd site_media/
+ls
+cd media/
+ls
+cd layers/
+ls
+cd ..
+cd uploads/
+ls
+rm buildings.zip 
+cd ..
+ls
+cd layers/
+ls
+rm -rf bogus20130904100541/
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+rm -rf media/
+ls
+clear
+ls
+cd websafe/
+ls
+rm -rf site_media/
+ls
+cd ..
+cd ..
+cd ..
+git add -A
+git commit -m "Removed the webandgis directory and other unnecessary directories and their contents"
+git push origin master
+cd django/websafe/
+l
+clear
+createdb websafe -U vagrant
+python manage.py syncdb
+vim websafe/settings.py
+python manage.py syncdb
+python manage.py runserver 0.0.0.0:5000
+sudo easy_install django-smart-selects
+python manage.py runserver 0.0.0.0:5000
+clear
+dropdb websafe
+createdb websafe -U vagrant
+python manage.py syncdb
+python manage.py runserver 0.0.0.0:5000
+clear
+ls
+git clone https://github.com/digi604/django-smart-selects.git
+ls
+dropdb websafe
+createdb websafe -U vagrant
+python manage.py syncdb
+python manage.py runserver 0.0.0.0:5000
+psql
+psql websafe
+psql websafe
+python manage.py runserver 0.0.0.0:500
+python manage.py runserver 0.0.0.0:5000
+ls
+psql websafe
+clear
+dropdb websafe
+createdb websafe -U vagrant
+python manage.py syncdb
+python manage.py runserver 0.0.0.0:5000
+psql websafe
+python manage.py runserver 0.0.0.0:5000
+logout
+cd django/websafe/
+ls
+python manage.py runserver 0.0.0.0:5000
+cd site_media/media/
+ls
+cd layers/
+ls
+cd quiapo-buildings20130905154136/
+ls
+vim buildings.shp.keywords 
+cd ..
+cd ..
+cd .. ..
+cd ..
 python manage.py runserver 0.0.0.0:5000
 logout

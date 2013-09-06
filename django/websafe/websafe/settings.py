@@ -143,12 +143,12 @@ INSTALLED_APPS = [
     "metron",
     "eventlog",
     "leaflet",
+    "smart_selects",
     
     # project
     "websafe",
     "layer_manager",
     "calculate",
-    "testapp",
 ]
 
 # A sample logging configuration. The only tangible logging

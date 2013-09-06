@@ -11,6 +11,7 @@ post-processing.
 import errno
 import glob
 import os
+import shutil
 import zipfile
 
 from subprocess import call
@@ -26,6 +27,7 @@ from django.db.models.query import QuerySet
 from django.dispatch import receiver
 from django.template.defaultfilters import slugify
 
+from smart_selects.db_fields import ChainedForeignKey
 
 class OverwriteStorage(FileSystemStorage):
     """
@@ -37,6 +39,26 @@ class OverwriteStorage(FileSystemStorage):
             os.remove(os.path.join(settings.MEDIA_ROOT, name))
         return name
 
+
+class Category(models.Model):
+    """
+    A model to represent the different categories for Layers
+    """
+    name = models.CharField(max_length=255)
+    def __unicode__(self):
+        return self.name
+    
+
+class Subcategory(models.Model):
+    """
+    A model to represent the different subcategories for Layers
+    """
+    name = models.CharField(max_length=255)
+    category = models.ForeignKey(Category)
+    
+    def __unicode__(self):
+        return self.name
+    
         
 class Layer(models.Model):
     """
@@ -49,12 +71,12 @@ class Layer(models.Model):
         upload_to='uploads', help_text="""Zip file containing the shapefile
         (mandatory files are: *.shp, *.shx, *.dbf)"""
     )
-    layer_category = models.CharField(max_length=1, choices = (
-        ('H', 'Hazard'),
-        ('E', 'Exposure'),
-        )
-    )
-    date_added = models.DateTimeField(auto_now_add=True)
+    
+    layer_category = models.ForeignKey(Category)
+    layer_subcategory = ChainedForeignKey(Subcategory,
+        chained_field='layer_category', chained_model_field='category')
+    
+    date_added = models.DateTimeField(editable=False)
     slug = models.SlugField(editable=False)
     
     def __unicode__(self):
@@ -77,20 +99,36 @@ def create_folder(path):
         else:
             raise
 
+           
+def delete_directory(path):
+    """
+    A method to delete a directory and all of its subdirectories and contents.
+    """
+    try:
+        shutil.rmtree(path)
+    except:
+        print 'Something went wrong'
 
+        
 @receiver(models.signals.pre_save, sender=Layer)
-def layer_handler(sender, instance, *args, **kwargs):
+def post_process(sender, instance, *args, **kwargs):
     """
     Post process the uploaded layer.
     Assign a date & time to the instance's 'date_added' attribute
     Create a slug for the instance
-    Get the bounding box information and save it with the model
+    Get the bounding box information
+    Create a .keywords file
     """
     
-    now = datetime.utcnow() +timedelta(hours=8)    
-    to_slug = instance.name + now.strftime('%Y%m%d%H%M%S')
-    instance.date_added = now
-    instance.slug = slugify(to_slug)
+    #Because auto_now_add adds the date and time AFTER saving the model,
+    #manually add the date and time and create a slug
+    if instance.date_added: 
+        print 'Editing your model...'
+    else:
+        now = datetime.utcnow() +timedelta(hours=8)    
+        instance.date_added = now
+        to_slug = instance.name + now.strftime('%Y%m%d%H%M%S')
+        instance.slug = slugify(to_slug)
     
     # Deletes an existing layer with the same slug name
     for layer in Layer.objects.filter(slug=instance.slug):
@@ -128,3 +166,28 @@ def layer_handler(sender, instance, *args, **kwargs):
         #Create GeoJSON file
         output = os.path.join(zip_out, 'geometry.json')
         call(['ogr2ogr', '-f', 'GeoJSON', output, shapefile])
+        
+    #Open a new file with using the same filename as the .shp file
+    filename = os.path.splitext(shapefile)[0] + '.keywords'
+    f = open(filename, 'w')
+    category = 'category: %s' % instance.layer_category
+    subcategory = 'subcategory: %s' % instance.layer_subcategory
+    f.write(category + '\n')
+    f.write(subcategory)
+    f.close()
+   
+@receiver(models.signals.pre_delete, sender=Layer)   
+def layer_delete(sender, instance, *args, **kwargs):
+    """
+    A receiver for deleting the assiociated zip file and the directory
+    containing the extracted contents before deleting a model instance.
+    """
+    
+    #This is the directory containing the contents of the original zip file
+    layer_folder = os.path.join(settings.MEDIA_ROOT, 'layers', instance.slug)
+    #This is the path of the original zip file
+    original_upload = os.path.join(settings.MEDIA_ROOT, instance.shapefile.name)
+    #Delete the directory with the extracted contents
+    delete_directory(layer_folder)
+    #Delete the original upload
+    os.remove(original_upload)

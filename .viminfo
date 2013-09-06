@@ -44,11 +44,13 @@
 # Input Line History (newest to oldest):
 
 # Registers:
-"1	LINE	0
-	# Create your views here.
+""1	LINE	0
+	    "testapp",
 "2	LINE	0
+	# Create your views here.
+"3	LINE	0
 	# Create your models here.
-"3	CHAR	0
+"4	CHAR	0
 	<form method="post" action="/poem">
 	        <p>Plural noun<br><input type="text" name="noun1"</p>
 	        <p>Singular noun<br><input type="text" name="noun2"</p>
@@ -56,15 +58,15 @@
 	        <p>Noun<br><input type="text" name="noun3"</p>
 	        <input type="submit">
 	        </form>
-"4	LINE	0
-	
 "5	LINE	0
-	    tornado.ioloop.IOLoop.instance().start()
+	
 "6	LINE	0
-	    http_server.listen(options.port)
+	    tornado.ioloop.IOLoop.instance().start()
 "7	LINE	0
+	    http_server.listen(options.port)
+"8	LINE	0
 	    http_server = tornado.httpserver.HTTPServer(app)
-"8	CHAR	0
+"9	CHAR	0
 	if __name__ == '__main__':
 	    tornado.options.parse_command_line()
 	    app = tornado.web.Application(
@@ -74,37 +76,30 @@
 	        ]
 	    )v
 	 
-"9	CHAR	0
-	geHandler(tornado.web.RequestHandler):
-	    def post(self):
-	        noun1 = self.get_argument('noun1')
-	        noun2 = self.get_argument('noun2')
-	        verb = self.get_argument('verb')
-	        noun3 = self.get_argument('noun3')
-	        self.render('poem.html', roads=noun1, wood=noun2, made=verb,
-	            d
-""-	CHAR	0
+"-	CHAR	0
 	l
 
 # File marks:
-'0  6  29  ~/django/websafe/layer_manager/admin.py
-'1  2  29  ~/django/websafe/testapp/models.py
-'2  145  13  ~/django/websafe/websafe/settings.py
-'3  1  0  ~/django/websafe/testapp/urls.py
-'4  23  26  ~/django/websafe/testapp/models.py
-'5  10  20  ~/django/websafe/testapp/views.py
-'6  7  0  ~/django/websafe/testapp/urls.py
-'7  85  8  ~/django/websafe/layer_manager/models.py
-'8  105  0  ~/django/websafe/websafe/settings.py
-'9  144  19  ~/django/websafe/websafe/settings.py
+'0  1  0  ~/django/websafe/site_media/media/layers/quiapo-buildings20130905154136/buildings.shp.keywords
+'1  151  0  ~/django/websafe/websafe/settings.py
+'2  6  29  ~/django/websafe/layer_manager/admin.py
+'3  2  29  ~/django/websafe/testapp/models.py
+'4  145  13  ~/django/websafe/websafe/settings.py
+'5  1  0  ~/django/websafe/testapp/urls.py
+'6  23  26  ~/django/websafe/testapp/models.py
+'7  10  20  ~/django/websafe/testapp/views.py
+'8  7  0  ~/django/websafe/testapp/urls.py
+'9  85  8  ~/django/websafe/layer_manager/models.py
 
 # Jumplist (newest first):
+-'  1  0  ~/django/websafe/site_media/media/layers/quiapo-buildings20130905154136/buildings.shp.keywords
+-'  151  0  ~/django/websafe/websafe/settings.py
+-'  1  0  ~/django/websafe/websafe/settings.py
 -'  6  29  ~/django/websafe/layer_manager/admin.py
 -'  1  0  ~/django/websafe/layer_manager/admin.py
 -'  2  29  ~/django/websafe/testapp/models.py
 -'  1  0  ~/django/websafe/testapp/models.py
 -'  145  13  ~/django/websafe/websafe/settings.py
--'  1  0  ~/django/websafe/websafe/settings.py
 -'  1  0  ~/django/websafe/testapp/urls.py
 -'  23  26  ~/django/websafe/testapp/models.py
 -'  10  20  ~/django/websafe/testapp/views.py
@@ -195,11 +190,19 @@
 -'  1  0  ~/django/webandgis/README.md
 -'  1  0  ~/django/webandgis/webandgis/urls.py
 -'  25  0  ~/django/webandgis/README.md
--'  1  0  ~/django/webandgis/README.md
--'  25  0  ~/django/webandgis/README.md
--'  1  0  ~/django/webandgis/README.md
 
 # History of marks within files (newest to oldest):
+
+> ~/django/websafe/site_media/media/layers/quiapo-buildings20130905154136/buildings.shp.keywords
+	"	1	0
+
+> ~/django/websafe/websafe/settings.py
+	"	151	0
+	^	145	14
+	.	151	0
+	+	144	19
+	+	145	13
+	+	151	0
 
 > ~/django/websafe/layer_manager/admin.py
 	"	6	29
@@ -220,13 +223,6 @@
 	+	23	25
 	+	2	29
 	y	23	24
-
-> ~/django/websafe/websafe/settings.py
-	"	145	13
-	^	145	14
-	.	145	13
-	+	144	19
-	+	145	13
 
 > ~/django/websafe/testapp/urls.py
 	"	1	0
