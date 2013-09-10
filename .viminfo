@@ -11,8 +11,8 @@
 ~MSle0~/store
 
 # Command Line History (newest to oldest):
-:wq
 :q
+:wq
 :e websafe/settings.py
 :36
 :20
@@ -80,18 +80,20 @@
 	l
 
 # File marks:
-'0  1  0  ~/django/websafe/site_media/media/layers/quiapo-buildings20130905154136/buildings.shp.keywords
-'1  151  0  ~/django/websafe/websafe/settings.py
-'2  6  29  ~/django/websafe/layer_manager/admin.py
-'3  2  29  ~/django/websafe/testapp/models.py
-'4  145  13  ~/django/websafe/websafe/settings.py
-'5  1  0  ~/django/websafe/testapp/urls.py
-'6  23  26  ~/django/websafe/testapp/models.py
-'7  10  20  ~/django/websafe/testapp/views.py
-'8  7  0  ~/django/websafe/testapp/urls.py
-'9  85  8  ~/django/websafe/layer_manager/models.py
+'0  43  4  ~/django/websafe/layer_manager/views.py
+'1  1  0  ~/django/websafe/site_media/media/layers/quiapo-buildings20130905154136/buildings.shp.keywords
+'2  151  0  ~/django/websafe/websafe/settings.py
+'3  6  29  ~/django/websafe/layer_manager/admin.py
+'4  2  29  ~/django/websafe/testapp/models.py
+'5  145  13  ~/django/websafe/websafe/settings.py
+'6  1  0  ~/django/websafe/testapp/urls.py
+'7  23  26  ~/django/websafe/testapp/models.py
+'8  10  20  ~/django/websafe/testapp/views.py
+'9  7  0  ~/django/websafe/testapp/urls.py
 
 # Jumplist (newest first):
+-'  43  4  ~/django/websafe/layer_manager/views.py
+-'  1  0  ~/django/websafe/layer_manager/views.py
 -'  1  0  ~/django/websafe/site_media/media/layers/quiapo-buildings20130905154136/buildings.shp.keywords
 -'  151  0  ~/django/websafe/websafe/settings.py
 -'  1  0  ~/django/websafe/websafe/settings.py
@@ -189,9 +191,11 @@
 -'  25  0  ~/django/webandgis/README.md
 -'  1  0  ~/django/webandgis/README.md
 -'  1  0  ~/django/webandgis/webandgis/urls.py
--'  25  0  ~/django/webandgis/README.md
 
 # History of marks within files (newest to oldest):
+
+> ~/django/websafe/layer_manager/views.py
+	"	43	4
 
 > ~/django/websafe/site_media/media/layers/quiapo-buildings20130905154136/buildings.shp.keywords
 	"	1	0
