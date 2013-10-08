@@ -4,6 +4,12 @@
 
 {% block head_title %}{% trans "Welcome" %}{% endblock %}
 
+{% block extra_head%}
+    <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min' %}"/>
+{% endblock %}
+
 {% block body_class %}home{% endblock %}
 
 {% block banner %}

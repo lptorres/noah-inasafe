@@ -1,0 +1,25 @@
+------------------------------------------------------------
+/usr/bin/pip run on Tue Sep 24 05:43:36 2013
+Downloading/unpacking boost
+  Getting page http://pypi.python.org/simple/boost
+  Could not fetch URL http://pypi.python.org/simple/boost: HTTP Error 404: Not Found (boost does not have any releases)
+  Will skip URL http://pypi.python.org/simple/boost when looking for download links for boost
+  Getting page http://pypi.python.org/simple/
+  URLs to search for versions for boost:
+  * http://pypi.python.org/simple/boost/
+  Getting page http://pypi.python.org/simple/boost/
+  Could not fetch URL http://pypi.python.org/simple/boost/: HTTP Error 404: Not Found (boost does not have any releases)
+  Will skip URL http://pypi.python.org/simple/boost/ when looking for download links for boost
+  Could not find any downloads that satisfy the requirement boost
+No distributions at all found for boost
+Exception information:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/pip/basecommand.py", line 126, in main
+    self.run(options, args)
+  File "/usr/lib/python2.7/dist-packages/pip/commands/install.py", line 223, in run
+    requirement_set.prepare_files(finder, force_root_egg_info=self.bundle, bundle=self.bundle)
+  File "/usr/lib/python2.7/dist-packages/pip/req.py", line 948, in prepare_files
+    url = finder.find_requirement(req_to_install, upgrade=self.upgrade)
+  File "/usr/lib/python2.7/dist-packages/pip/index.py", line 152, in find_requirement
+    raise DistributionNotFound('No distributions at all found for %s' % req)
+DistributionNotFound: No distributions at all found for boost

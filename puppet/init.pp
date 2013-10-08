@@ -22,20 +22,30 @@ class update {
 
 class inasafe {
   package {['python-pip', 'rsync', 'git', 'pep8', 'python-nose', 'python-coverage', 'python-sphinx',
-            'pyqt4-dev-tools', 'pyflakes', 'python-dev', 'python-gdal', 'curl']:
+            'pyqt4-dev-tools', 'pyflakes', 'python-dev', 'python-gdal', 'curl', 'libpq-dev',
+            'python-psycopg2', 'gdal-bin', 'postgresql', 'vim', ]:
     ensure => present,
     provider => 'apt'
   }
   
-  package { ['tornado', 'numpy', 'sqlalchemy', 'psycopg2']:
+  package { ['tornado', 'numpy', 'sqlalchemy',]:
     ensure  => installed,
+    provider => pip
+  }
+  
+}
+
+class django {
+  package {['django', 'djangorestframework', 'django-leaflet', 'pinax-theme-bootstrap', 'django-braces', 'django-smart-selects']:
+    ensure => installed,
     provider => pip
   }
 }
 
-#class {'update':}
-class {'inasafe':}
 
-#sudo pip install 
+class {'update':}
+class {'inasafe':}
+class {'django':}
+
 #cloud-sptheme 
 #python-nosexcover

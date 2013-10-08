@@ -12,6 +12,7 @@
 
 # Command Line History (newest to oldest):
 :q
+:q
 :wq
 :e websafe/settings.py
 :36
@@ -80,18 +81,24 @@
 	l
 
 # File marks:
-'0  43  4  ~/django/websafe/layer_manager/views.py
-'1  1  0  ~/django/websafe/site_media/media/layers/quiapo-buildings20130905154136/buildings.shp.keywords
-'2  151  0  ~/django/websafe/websafe/settings.py
-'3  6  29  ~/django/websafe/layer_manager/admin.py
-'4  2  29  ~/django/websafe/testapp/models.py
-'5  145  13  ~/django/websafe/websafe/settings.py
-'6  1  0  ~/django/websafe/testapp/urls.py
-'7  23  26  ~/django/websafe/testapp/models.py
-'8  10  20  ~/django/websafe/testapp/views.py
-'9  7  0  ~/django/websafe/testapp/urls.py
+'0  22  1  ~/tornado/webSAFE/puppet/init.pp
+'1  48  0  ~/tornado/webSAFE/Vagrantfile
+'2  487  308  ~/.pip/pip.log
+'3  43  4  ~/django/websafe/layer_manager/views.py
+'4  1  0  ~/django/websafe/site_media/media/layers/quiapo-buildings20130905154136/buildings.shp.keywords
+'5  151  0  ~/django/websafe/websafe/settings.py
+'6  6  29  ~/django/websafe/layer_manager/admin.py
+'7  2  29  ~/django/websafe/testapp/models.py
+'8  145  13  ~/django/websafe/websafe/settings.py
+'9  1  0  ~/django/websafe/testapp/urls.py
 
 # Jumplist (newest first):
+-'  22  1  ~/tornado/webSAFE/puppet/init.pp
+-'  1  0  ~/tornado/webSAFE/puppet/init.pp
+-'  48  0  ~/tornado/webSAFE/Vagrantfile
+-'  1  0  ~/tornado/webSAFE/Vagrantfile
+-'  487  308  ~/.pip/pip.log
+-'  1  0  ~/.pip/pip.log
 -'  43  4  ~/django/websafe/layer_manager/views.py
 -'  1  0  ~/django/websafe/layer_manager/views.py
 -'  1  0  ~/django/websafe/site_media/media/layers/quiapo-buildings20130905154136/buildings.shp.keywords
@@ -185,14 +192,17 @@
 -'  1  0  ~/django/webandgis/README.md
 -'  25  0  ~/django/webandgis/README.md
 -'  1  0  ~/django/webandgis/README.md
--'  1  0  ~/django/webandgis/webandgis/urls.py
--'  25  0  ~/django/webandgis/README.md
--'  1  0  ~/django/webandgis/README.md
--'  25  0  ~/django/webandgis/README.md
--'  1  0  ~/django/webandgis/README.md
--'  1  0  ~/django/webandgis/webandgis/urls.py
 
 # History of marks within files (newest to oldest):
+
+> ~/tornado/webSAFE/puppet/init.pp
+	"	22	1
+
+> ~/tornado/webSAFE/Vagrantfile
+	"	48	0
+
+> ~/.pip/pip.log
+	"	487	308
 
 > ~/django/websafe/layer_manager/views.py
 	"	43	4

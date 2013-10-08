@@ -1,248 +1,3 @@
-python
-clear
-python
-logout
-ls
-cd tornado/db_app/
-ls
-python main.py 
-vim main.py 
-vim main.py 
-python main.py 
-python main.py 
-python main.py 
-python main.py 
-python main.py 
-python main.py 
-python main.py 
-clear
-python main.py shell
-clear
-python
-psql example
-python main.py 
-clear
-python main.py 
-clear
-logout
-cd tornado/db_app/
-ls
-python
-logout
-ls
-cd django/
-ls
-cd webandgis/
-python manage.py runserver 0.0.0.0:5000
-logout
-cd django/webandgis/
-ls
-python manage.py runserver 0.0.0.0:5000
-clear
-logout
-cd django/webandgis/
-ls
-python manage.py runserver 0.0.0.0:5000
-clear
-cd ..
-cd webandgis/
-ls
-python manage.py runserver 0.0.0.0:5000
-logout
-cd django/
-ls
-django-admin.py startproject --template=https://github.com/pinax/pinax-project-account/zipball/master websafe
-ls
-cd web
-cd websafe/
-ls
-clear
-ls
-cat requirements.txt 
-vim requirements.txt 
-sudo easy_install django-user-accounts
-sudo sudo easy_install django-forms-bootstrap
-sudo easy_install metron
-sudo easy_install metron
-sudo easy_install eventlog
-sudo easy_install django-jsonfield
-clear
-ls
-psql createdb websafe -U ton
-psql createdb -U vagrant websafe
-clear
-createdb websafe -U vagrant
-ls
-vim
-python manage.py syncdb
-python manage.py runserver 0.0.0.0:5000
-ls
-clear
-ls
-django-admin.py startapp layers
-python manage.py startapp layers
-clear
-django-admin.py startapp layer_manager
-django-admin.py startapp calculate
-ls
-cd layer_manager/
-;s
-ls
-clear
-ls
-cd ..
-ls
-ls
-cd ..
-cd webandgis/
-ls
-cd media/
-ls
-cd layers/
-ls
-cd ..
-cd uploads/
-ls
-clear
-cd ..
-ls
-cd ..
-ls
-cd data/
-ls
-cd ..
-ls
-clear
-cd media/layers/flood/
-ls
-clear
-cd raw/
-ls
-python
-ls /usr/local/lib/python2.7/site-packages/
-ls
-clear
-ls /usr/local/lib/python2.7/site-packages/
-clear
-python
-logout
-ls
-cd django/websafe/
-ls
-django-admin.py startapp testapp
-cd testapp/
-ls
-cd ..
-ls
-python manage.py syncdb
-python manage.py runserver 0.0.0.0:5000
-python manage.py runserver 0.0.0.0:5000
-clear
-python manage.py runserver 0.0.0.0:5000
-clear
-ls
-cd testapp/
-ls
-cd ..
-ls
-clear
-python manage.py runserver 0.0.0.0:5000
-python manage.py runserver 0.0.0.0:5000
-clear
-python manage.py syncdb
-python manage.py runserver 0.0.0.0:5000
-python manage.py syncdb
-ls
-python manage.py syncdb
-ls
-mkdir media
-python manage.py runserver 0.0.0.0:5000
-vim websafe/settings.py
-python manage.py runserver 0.0.0.0:5000
-psql websafe 
-clear
-python manage.py runserver 0.0.0.0:5000
-python manage.py runserver 0.0.0.0:5000
-clear
-python manage.py syncdb
-python manage.py runserver 0.0.0.0:5000
-python
-python manage.py runserver 0.0.0.0:5000
-python manage.py syncdb
-python manage.py runserver 0.0.0.0:5000
-python manage.py runserver 0.0.0.0:5000
-python
-python manage.py runserver 0.0.0.0:5000
-ls
-cd..
-ls
-cd ..
-ls
-clear
-cd webandgis/data/
-ls
-cd ..
-cd data/
-ls
-clear
-ls
-clear
-python
-ls
-cd ..
-ls
-clear
-python
-sudo easy_install django-braces
-sudo easy install argparse
-sudo easy_install argparse
-sudo easy_install distribute
-sudo easy_install dj-database-url
-sudo easy_install dj-static
-sudo easy_install django-appconf
-sudo easy_install django-forms-bootstrap
-sudo easy_install django-jsonfield
-cd ..
-cd websafe/
-ls
-clear
-vim websafe/settings.py
-python manage.py syncdb
-python manage.py runserver 0.0.0.0:5000
-python
-python manage.py runserver 0.0.0.0:5000
-python manage.py runserver 0.0.0.0:5000
-python manage.py runserver 0.0.0.0:5000
-python manage.py runserver 0.0.0.0:5000
-python manage.py runserver 0.0.0.0:5000
-logout
-cd django/websafe/
-ls
-clear
-python manage.py runserver 0.0.0.0:5000
-python manage.py syncdb
-python manage.py runserver 0.0.0.0:5000
-clear
-dpkg-reconfigure tzdata
-sudo dpkg-reconfigure tzdata
-python manage.py runserver 0.0.0.0:5000
-logout
-cd django/websafe/
-ls
-vim
-ls
-vim layer_manager/models.py
-python manage.py runserver 0.0.0.0:5000
-ls
-clear
-ls
-python manage.py syncdb
-python manage.py syncdb
-python manage.py runserver 0.0.0.0:5000
-python manage.py runserver 0.0.0.0:5000
-python manage.py syncdb
-python manage.py runserver 0.0.0.0:5000
-logout
 cd django/websafe/
 lc
 ls
@@ -497,4 +252,249 @@ cd ..
 cd .. ..
 cd ..
 python manage.py runserver 0.0.0.0:5000
+logout
+ls
+cd tornado/
+ls
+clear
+ls
+cd webSAFE/
+ls
+clear
+ls
+cd webapp/
+ls
+python main.py
+logout
+cd tornado/webSAFE/
+ls
+clear
+cd webapp/
+python main.py 
+pip install tornado
+pip install numpy
+sudo apt-get install python-pip rsync git pep8 python-nose python-coverage python-sphinx pyqt-dev-tools pyflakes python-dev python-gdal curl
+sudo apt-get install python-pip rsync git pep8 python-nose python-coverage python-sphinx pyqt4-dev-tools pyflakes python-dev python-gdal curl
+sudo apt-get update
+logout
+ls
+pip install postgresql-psycopg2
+pip install psycopg
+clear
+pip install psycopg2
+sudo pip install psycopg2
+sudo apt-get install postgresql
+pip install psycopg2
+sudo pip install psycopg2
+sudo apt-get install libpq-dev
+sudo pip install psycopg2
+clear
+ls
+logout
+psql example
+clear
+sudo su postgres
+cle
+clear
+createdb example -U vagrant
+cd tornado/db_app/
+ls
+clear
+python
+clear
+psql example 
+clear
+python
+clear
+python main.py 
+clear
+cd ..
+cd webSAFE/
+ls
+cd webapp/
+python main.py 
+logout
+ls
+cd ..
+ls
+cd vagrant/django/websafe_api/
+ls
+python manage.py runserver 0.0.0.0:5000
+yolk -l
+clear
+pip install django
+clear
+ls
+cd ..
+tar -xvzf Django-1.5.4.tar.gz 
+cd Django-1.5.4/
+ls
+python setup.py install
+ls
+clear
+sudo python setup.py install
+clear
+cd ..
+cd websafe_api/
+python manage.py runserver 0.0.0.0:5000
+clear
+ls
+vim websafe_api/settings.py
+sudo apt-get install vim
+logout
+pip install djangorestframework
+vim /home/vagrant/.pip/pip.log 
+sudo pip install djangorestframework
+cd django/websafe_api/
+python manage.py runserver 0.0.0.0:5000
+python manage.py runserver 0.0.0.0:5000
+clear
+sudo pip install smart-selects
+sudo pip install django-smart-selects
+sudo pip install django-braces
+python manage.py runserver 0.0.0.0:5000
+python manage.py syncdb
+python manage.py runserver 0.0.0.0:5000
+clear
+python
+python manage.py syncdb
+clear
+python manage.py syncdb
+python manage.py syncdb
+clear
+python manage.py syncdb
+python manage.py syncdb
+python manage.py syncdb
+python manage.py runserver 0.0.0.0:5000
+logout
+cd tornado/webSAFE/
+ls
+git pull
+git pull -f
+clear
+git reset --hard
+git pull
+cd webapp/
+python main.py 
+sudo pip install mapnik2
+clear
+sudo pip install boost
+cd ..
+vim Vagrantfile 
+ls
+vim puppet/init.pp 
+sudo apt-get install python-software-properties mapnik
+sudo apt-get update
+sudo apt-get install mapnik
+sudo add-apt-repository ppa:mapnik/v2.2.0
+sudo apt-get install python-software-properties
+sudo add-apt-repository ppa:mapnik/v2.2.0
+logout
+python
+clear
+python
+clear
+python
+psql template1
+sudo su postgres
+clear
+createdb example -U vagrant
+psql example
+python
+logout
+python
+clear
+psql example 
+createdb example -U vagrant
+psql
+psql example
+psql example
+logout
+ps -ef
+ps -ef | grep python
+logout
+psql example 
+python
+ls
+python cli.py 1
+python cli.py 1
+python cli.py 1
+python cli.py 1
+python bench.py 1
+python bench.py 1
+python bench.py 1
+python bench.py 10
+python bench.py 100
+python bench.py 1
+python bench.py 1000
+python bench.py 10000
+python bench.py 10000
+python bench.py 10000
+python bench.py 100000
+python bench.py 1
+python bench.py 1
+python bench.py 10
+python bench.py 100
+python
+python bench.py 1
+python bench.py 1
+python bench.py 100000
+clear
+python bench.py 1
+python bench.py 10
+python bench.py 100
+python bench.py 10000
+python bench.py 1
+python bench.py 10
+python bench.py 100
+python bench.py 1000
+python bench.py 10000
+python bench.py 1
+python bench.py 10
+python bench.py 100
+python bench.py 1000
+python bench.py 10000
+python
+python bench.py 100000
+python bench.py 1000000
+python bench.py 1
+python bench.py 1
+python bench.py 1
+python bench.py 1
+python bench.py 1
+python bench.py 10
+python bench.py 10
+python bench.py 100
+python bench.py 1000
+python bench.py 10000
+python bench.py 1
+python bench.py 1
+python bench.py 10
+python bench.py 100
+python bench.py 100
+python bench.py 100
+python bench.py 100
+python bench.py 100
+python bench.py 100
+python bench.py 1000
+python bench.py 10000
+python bench.py 100000
+python bench.py 100000
+clear
+python bench.py 1000000
+python bench.py 1000000
+python bench.py
+python bench.py
+python bench.py 1
+python bench.py 1
+python bench.py 1
+python bench.py 1
+python bench.py 1
+logout
+psql example
+ls
+cd django/websafe
+ls
+clear
+python manage.py syncdb
 logout
