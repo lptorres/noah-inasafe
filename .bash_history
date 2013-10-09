@@ -1,13 +1,3 @@
-cd django/websafe/
-lc
-ls
-clear
-python manage.py runserver 0.0.0.0:5000
-clear
-python manage.py syncdb
-python manage.py runserver 0.0.0.0:5000
-ls
-clear
 dropdb websafe
 psql websafe
 createdb websafe -U vagrant
@@ -497,4 +487,14 @@ cd django/websafe
 ls
 clear
 python manage.py syncdb
+logout
+createdb dev
+psql dev
+psql dev
+logout
+psql dev
+python
+psql dev
+psql dev
+quit()
 logout
