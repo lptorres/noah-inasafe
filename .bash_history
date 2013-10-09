@@ -1,6 +1,3 @@
-dropdb websafe
-psql websafe
-createdb websafe -U vagrant
 python manage.py syncdb
 python manage.py runserver 0.0.0.0:5000
 psql websafe
@@ -497,4 +494,7 @@ python
 psql dev
 psql dev
 quit()
+logout
+curl http://localhost:5000/
+curl http://localhost:8000/
 logout
