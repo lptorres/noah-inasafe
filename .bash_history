@@ -1,62 +1,3 @@
-python manage.py syncdb
-python manage.py runserver 0.0.0.0:5000
-psql websafe
-python
-python manage.py runserver 0.0.0.0:5000
-dropdb websafe
-createdb websafe -U vagrant
-python manage.py syncdb
-python manage.py runserver 0.0.0.0:5000
-dropdb websafe
-createdb websafe -U vagrant
-createdb websafe -U vagrant
-python manage.py syncdb
-ls
-cd ..
-ls
-cd web
-cd webandgis/
-ls
-clear
-python manage.py runserver 0.0.0.0:5000
-cd ..
-ls
-cd websafe/
-ls
-clear
-dropdb websafe
-createdb websafe -U vagrant
-python manage.py syncdb
-TypeError: Error when calling the metaclass bases
-    unbound method contribute_to_class() must be called with HazardManager instance as first argument (got ModelBase instance instead)
-TypeError: Error when calling the metaclass bases
-    unbound method contribute_to_class() must be called with HazardManager instance as first argument (got ModelBase instance instead)
-python manage.py syncdb
-python manage.py runserver 0.0.0.0:5000
-python manage.py runserver 0.0.0.0:5000
-python manage.py shell
-python manage.py shell
-python manage.py shell
-dropdb websafe
-createdb websafe -U vagrant
-python manage.py syncdb
-python manage.py syncdb
-python manage.py syncdb
-python manage.py runserver 0.0.0.0:5000
-clear
-python shell
-python manage.py shell
-python manage.py runserver 0.0.0.0:5000
-clear
-python manage.py shell
-python
-python manage.py shell
-python manage.py shell
-python manage.py shell
-python manage.py runserver 0.0.0.0:5000
-python manage.py runserver 0.0.0.0:5000
-python manage.py runserver 0.0.0.0:5000
-python manage.py runserver 0.0.0.0:5000
 logout
 ls
 cd django/
@@ -497,4 +438,63 @@ quit()
 logout
 curl http://localhost:5000/
 curl http://localhost:8000/
+logout
+python
+psql dev
+python
+clear
+python
+python
+python
+python
+psql dev
+cd tornado/db_app/
+python main.py 
+python main.py 
+sudo pip install tornado
+python main.py 
+python main.py 
+python main.py 
+python main.py 
+python main.py 
+python main.py 
+python main.py 
+python main.py 
+python main.py 
+git add -A
+cd ..
+cd ..
+ls
+git add -A
+git commit -m "Got a simple tornado application that can query the pg database working"
+git push
+python
+ls
+cd ..
+ls
+cd vagrant/data/
+ls
+python
+clear
+python
+python
+clear
+python
+cd..
+cd ..
+cd tornado/db_app/
+python main.py 
+python main.py 
+python main.py 
+python main.py 
+clear
+python main.py 
+python main.py 
+git add -a
+cd ~/
+git add -A
+git commit -m "Refactored the tornado app a little to work with 2 get parameters instead of just 1"
+git push
+logout
+curl -G -d "q='Megan Young'" "http://localhost:5000"
 logout
