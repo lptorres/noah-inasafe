@@ -139,9 +139,6 @@ INSTALLED_APPS = [
     "django_forms_bootstrap",
     
     # external
-    "account",
-    "metron",
-    "eventlog",
     "leaflet",
     "smart_selects",
     

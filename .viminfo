@@ -81,18 +81,23 @@
 	l
 
 # File marks:
-'0  22  1  ~/tornado/webSAFE/puppet/init.pp
-'1  48  0  ~/tornado/webSAFE/Vagrantfile
-'2  487  308  ~/.pip/pip.log
-'3  43  4  ~/django/websafe/layer_manager/views.py
-'4  1  0  ~/django/websafe/site_media/media/layers/quiapo-buildings20130905154136/buildings.shp.keywords
-'5  151  0  ~/django/websafe/websafe/settings.py
-'6  6  29  ~/django/websafe/layer_manager/admin.py
-'7  2  29  ~/django/websafe/testapp/models.py
-'8  145  13  ~/django/websafe/websafe/settings.py
-'9  1  0  ~/django/websafe/testapp/urls.py
+'0  1  0  ~/outfile.txt
+'1  127  0  /tmp/inasafe/2013-10-15/vagrant/impacts/tmpM3p6Qk.shp
+'2  105  4  ~/django/websafe/websafe/settings.py
+'3  22  1  ~/tornado/webSAFE/puppet/init.pp
+'4  48  0  ~/tornado/webSAFE/Vagrantfile
+'5  487  308  ~/.pip/pip.log
+'6  43  4  ~/django/websafe/layer_manager/views.py
+'7  1  0  ~/django/websafe/site_media/media/layers/quiapo-buildings20130905154136/buildings.shp.keywords
+'8  151  0  ~/django/websafe/websafe/settings.py
+'9  6  29  ~/django/websafe/layer_manager/admin.py
 
 # Jumplist (newest first):
+-'  1  0  ~/outfile.txt
+-'  127  0  /tmp/inasafe/2013-10-15/vagrant/impacts/tmpM3p6Qk.shp
+-'  1  0  /tmp/inasafe/2013-10-15/vagrant/impacts/tmpM3p6Qk.shp
+-'  105  4  ~/django/websafe/websafe/settings.py
+-'  1  0  ~/django/websafe/websafe/settings.py
 -'  22  1  ~/tornado/webSAFE/puppet/init.pp
 -'  1  0  ~/tornado/webSAFE/puppet/init.pp
 -'  48  0  ~/tornado/webSAFE/Vagrantfile
@@ -186,14 +191,22 @@
 -'  25  0  ~/django/webandgis/README.md
 -'  1  0  ~/django/webandgis/README.md
 -'  25  0  ~/django/webandgis/README.md
--'  1  0  ~/django/webandgis/README.md
--'  1  0  ~/django/webandgis/webandgis/urls.py
--'  25  0  ~/django/webandgis/README.md
--'  1  0  ~/django/webandgis/README.md
--'  25  0  ~/django/webandgis/README.md
--'  1  0  ~/django/webandgis/README.md
 
 # History of marks within files (newest to oldest):
+
+> ~/outfile.txt
+	"	1	0
+
+> /tmp/inasafe/2013-10-15/vagrant/impacts/tmpM3p6Qk.shp
+	"	127	0
+
+> ~/django/websafe/websafe/settings.py
+	"	105	4
+	^	145	14
+	.	151	0
+	+	144	19
+	+	145	13
+	+	151	0
 
 > ~/tornado/webSAFE/puppet/init.pp
 	"	22	1
@@ -209,14 +222,6 @@
 
 > ~/django/websafe/site_media/media/layers/quiapo-buildings20130905154136/buildings.shp.keywords
 	"	1	0
-
-> ~/django/websafe/websafe/settings.py
-	"	151	0
-	^	145	14
-	.	151	0
-	+	144	19
-	+	145	13
-	+	151	0
 
 > ~/django/websafe/layer_manager/admin.py
 	"	6	29

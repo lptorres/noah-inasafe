@@ -1,158 +1,3 @@
-logout
-ls
-cd django/
-ls
-cd webandgis/
-ls
-python manage.py runserver 0.0.0.0:5000
-cd ..
-cd websafe/
-ls
-clear
-python manage.py runserver 0.0.0.0:5000
-logout
-cd django/websafe/
-ls
-python manage.py runserver 0.0.0.0:5000
-python manage.py shell
-psql websafe
-ls
-django-admin.py startapp testapp
-ls
-cd testapp
-ls
-vim models.py 
-vim urls.py
-vim views.py 
-vim models.py 
-vim urls.py 
-cd ..
-vim websafe/settings.py
-python manage.py syncdb
-vim testapp/models.py
-python manage.py syncdb
-python manage.py runserver 0.0.0.0:5000
-python manage.py shell
-ls
-vim layer_manager/admin.py
-python manage.py syncdb
-python manage.py runserver 0.0.0.0:5000
-python
-ls
-clear
-python
-python manage.py runserver 0.0.0.0:5000
-python manage.py runserver 0.0.0.0:5000
-python manage.py runserver 0.0.0.0:5000
-clear
-dropdb websafe
-createdb websafe -U vagrant
-python manage.py syncdb
-python manage.py runserver 0.0.0.0:5000
-clear
-python
-python manage.py shell
-python manage.py runserver 0.0.0.0:5000
-clear
-python
-python manage.py runserver 0.0.0.0:5000
-cd ..
-cd webandgis/data/
-ls
-clear
-python
-cd ~/django/websafe/
-python manage.py runserver 0.0.0.0:5000
-python manage.py runserver 0.0.0.0:5000
-python manage.py runserver 0.0.0.0:5000
-python manage.py runserver 0.0.0.0:5000
-python manage.py runserver 0.0.0.0:5000
-python manage.py runserver 0.0.0.0:5000
-python manage.py shell
-python manage.py runserver 0.0.0.0:5000
-logout
-cd django/websafe/
-python manage.py runserver 0.0.0.0:5000
-sudo easy_install django_leaflet
-python manage.py runserver 0.0.0.0:5000
-logout
-cd django/websafe/
-python manage.py runserver 0.0.0.0:5000
-logout
-ls
-cd django/websafe/
-clear
-cd ..
-ls
-clear
-cd ..
-ls
-git add -A
-dropdb websafe
-cd django/websafe/
-ls
-cd site_media/
-ls
-cd media/
-ls
-cd layers/
-ls
-cd ..
-cd uploads/
-ls
-rm buildings.zip 
-cd ..
-ls
-cd layers/
-ls
-rm -rf bogus20130904100541/
-ls
-cd ..
-ls
-cd ..
-ls
-cd ..
-ls
-rm -rf media/
-ls
-clear
-ls
-cd websafe/
-ls
-rm -rf site_media/
-ls
-cd ..
-cd ..
-cd ..
-git add -A
-git commit -m "Removed the webandgis directory and other unnecessary directories and their contents"
-git push origin master
-cd django/websafe/
-l
-clear
-createdb websafe -U vagrant
-python manage.py syncdb
-vim websafe/settings.py
-python manage.py syncdb
-python manage.py runserver 0.0.0.0:5000
-sudo easy_install django-smart-selects
-python manage.py runserver 0.0.0.0:5000
-clear
-dropdb websafe
-createdb websafe -U vagrant
-python manage.py syncdb
-python manage.py runserver 0.0.0.0:5000
-clear
-ls
-git clone https://github.com/digi604/django-smart-selects.git
-ls
-dropdb websafe
-createdb websafe -U vagrant
-python manage.py syncdb
-python manage.py runserver 0.0.0.0:5000
-psql
-psql websafe
-psql websafe
 python manage.py runserver 0.0.0.0:500
 python manage.py runserver 0.0.0.0:5000
 ls
@@ -497,4 +342,159 @@ git commit -m "Refactored the tornado app a little to work with 2 get parameters
 git push
 logout
 curl -G -d "q='Megan Young'" "http://localhost:5000"
+logout
+cd tornado/
+cd db_app/
+python twitter_sync.py 
+python twitter_sync.py 
+python twitter_sync.py 
+python
+sudo pip install yolk
+yolk -l
+python test.py 
+python test.py 
+python test.py 
+python main.py 
+python main.py 
+python main.py 
+python main.py 
+python
+python main.py 
+python main.py 
+python
+clear
+python
+python
+python main.py 
+python main.py 
+python main.py 
+cd ~
+ls
+git add -A
+git add -A
+git commit -m "Added a LayerHandler which returns the JSON representation of one Layer. Also refactored the CalculateHandler to return the JSON representation of the exposure and hazard layers for now. Both still use the 'book' entity though. Also updated the gitignore file."
+git push
+logout
+logout
+ls
+cd tornado/
+ls
+cd db_app/
+ls
+clear
+rm -rf models.pyc 
+ls
+clear
+ls
+ls
+python
+python
+clear
+python
+python
+clear
+python
+logout
+psql dev
+clear
+ls
+cd data/
+pws
+pwd
+psql dev
+clear
+cd ~/django/websafe/
+ls
+python manage.py runserver 0.0.0.0:5000
+vim websafe/settings.py
+sudo pip install pinax-theme-bootstrap
+python manage.py syncdb
+python manage.py syncdb
+python manage.py syncdb
+python manage.py syncdb
+clear
+cd ..
+ls
+cd ..
+cd tornado/
+ls
+cd db_app/
+ls
+python main.py 
+python main.py 
+clear
+ls
+psql dev
+python main.py 
+python
+python main.py 
+clear
+iconv
+clear
+ls
+cd results/
+ls
+iconv -f latin-1 -t utf-8 test2.json test3.json
+iconv --help
+iconv -l
+iconv -f UNICODE -t UTF-8 test2.json test3.json
+clear
+iconv -f LATIN1 -t UTF-8 test2.json test3.json
+iconv -f LATIN1 -t UTF-8 test2.json > test3.json
+la
+ls
+clear
+rm -rf test.json test2.json test3.json 
+cd ..
+python main.py 
+logout
+ls
+cd ..
+ls
+cd vagrant/
+ls
+cd tornado/db_app/
+python main.py 
+logout
+ls
+curl http://localhost:8000/calculate/?e=2&h=1
+curl "http://localhost:8000/calculate/?e=2&h=1"
+curl "localhost:8000/calculate/?e=2&h=1"
+curl "localhost:8000"
+
+curl "localhost:5000/calculate/?e=2&h=1"
+logout
+sudo vim /tmp/inasafe/2013-10-15/vagrant/impacts/tmpM3p6Qk.shp 
+python
+ls
+cd tornado/db_app/
+python main.py 
+python main.py 
+clear
+python
+python
+python
+curl localhost:8000/calculate/?e=2&h=1 > out.txt
+curl localhost:5000/calculate/?e=2&h=1 > outfile
+clear
+curl -o outfile.txt localhost:5000/calculate/?e=2&h=1
+ls
+vim outfile.txt 
+rm -rf outfile
+rm outfile.txt 
+ls
+curl -o outfile.txt localhost:5000/calculate/?e=2&h=1
+clear
+curl -d e=2 h=1 http://localhost:5000/calculate/
+curl localhost:5000/calculate/?e=2&h=1
+curl localhost:5000/calculate/?e=2&h=1
+clear
+curl localhost:5000/calculate/?e=2&h=1
+logout
+curl "localhost:5000/calculate/e=2&h=1"
+curl localhost:5000/calculate/e=2&h=1
+curl localhost:5000/calculate/?e=2&h=1
+logout
+cd tornado/db_app/
+python main.py
 logout

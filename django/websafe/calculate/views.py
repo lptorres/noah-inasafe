@@ -10,6 +10,8 @@ from safe.api import read_layer
 from safe.api import calculate_impact
 from safe.impact_functions.inundation.flood_OSM_building_impact \
     import FloodBuildingImpactFunction
+from safe.impact_functions.inundation.flood_population \
+    import FloodEvacuationFunction
 from calculate.forms import CalculateForm
 from layer_manager.models import Layer
 
@@ -69,6 +71,7 @@ class ResultsView(TemplateView):
         impact_geojson = os.path.join(settings.MEDIA_URL, 'layers', outname)
 
         context = impact_file.keywords
+        print impact_file.keywords
         context['geojson'] = impact_geojson
         
         return context
