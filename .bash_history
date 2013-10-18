@@ -1,86 +1,3 @@
-python manage.py runserver 0.0.0.0:500
-python manage.py runserver 0.0.0.0:5000
-ls
-psql websafe
-clear
-dropdb websafe
-createdb websafe -U vagrant
-python manage.py syncdb
-python manage.py runserver 0.0.0.0:5000
-psql websafe
-python manage.py runserver 0.0.0.0:5000
-logout
-cd django/websafe/
-ls
-python manage.py runserver 0.0.0.0:5000
-cd site_media/media/
-ls
-cd layers/
-ls
-cd quiapo-buildings20130905154136/
-ls
-vim buildings.shp.keywords 
-cd ..
-cd ..
-cd .. ..
-cd ..
-python manage.py runserver 0.0.0.0:5000
-logout
-ls
-cd tornado/
-ls
-clear
-ls
-cd webSAFE/
-ls
-clear
-ls
-cd webapp/
-ls
-python main.py
-logout
-cd tornado/webSAFE/
-ls
-clear
-cd webapp/
-python main.py 
-pip install tornado
-pip install numpy
-sudo apt-get install python-pip rsync git pep8 python-nose python-coverage python-sphinx pyqt-dev-tools pyflakes python-dev python-gdal curl
-sudo apt-get install python-pip rsync git pep8 python-nose python-coverage python-sphinx pyqt4-dev-tools pyflakes python-dev python-gdal curl
-sudo apt-get update
-logout
-ls
-pip install postgresql-psycopg2
-pip install psycopg
-clear
-pip install psycopg2
-sudo pip install psycopg2
-sudo apt-get install postgresql
-pip install psycopg2
-sudo pip install psycopg2
-sudo apt-get install libpq-dev
-sudo pip install psycopg2
-clear
-ls
-logout
-psql example
-clear
-sudo su postgres
-cle
-clear
-createdb example -U vagrant
-cd tornado/db_app/
-ls
-clear
-python
-clear
-psql example 
-clear
-python
-clear
-python main.py 
-clear
 cd ..
 cd webSAFE/
 ls
@@ -497,4 +414,87 @@ curl localhost:5000/calculate/?e=2&h=1
 logout
 cd tornado/db_app/
 python main.py
+logout
+curl localhost:5000/calculate/?e=2&h=1
+curl localhost:5000/calculate/?e=2&h=1
+curl "localhost:5000/calculate/?e=2&h=1"
+cd tornado/db_app/results/
+ls
+rm impact21.json 
+rm impact21.json 
+curl "localhost:5000/calculate/?e=2&h=1" > output.txt
+curl "localhost:5000/calculate/?e=2&h=1" > output.txt
+rm output.txt 
+rm impact21.json 
+ls
+curl "localhost:5000/calculate/?e=2&h=1" > output.txt
+rm impact21.json 
+rm output.txt 
+curl "localhost:5000/calculate/?e=2&h=1" > output.txt
+rm impact21.json 
+ls
+cd ..
+ls
+clear
+ls
+rm api_request.html 
+ls
+clear
+cd ~/
+ls
+git add -A
+git commit -m 'Got the calculate and layer handlers to work as proper API calls now BUT something needs to be done about the encoding'
+git push
+ls
+cd /tmp/inasafe/2013-10-17/vagrant/impacts/
+ls
+clearls
+cd ..
+cd ..
+cd ~/
+cd tornado/db_app/
+ls
+clear
+python
+clear
+ls
+rm results/impact21.json 
+ls
+clear
+curl "localhost:8000/calculate/?e=2&h=1" > results/output.txt
+curl "localhost:5000/calculate/?e=2&h=1" > results/output.txt
+logout
+cd tornado/db_app/
+python main.py 
+clear
+ls results/
+logout
+ls
+sudo pip install redis
+sudo pip install tornado-redis
+python
+ls
+clear
+tar -xvzf redis-2.6.16.tar.gz 
+cd redis-2.6.16/
+ls
+make
+sudo apt-get install make
+make
+make test
+sudo apt-get install tcl
+make test
+clear
+./redis_server
+ls
+cd src/
+./redis-server 
+clear
+cd ..
+make install
+sudo make install
+cd utils/
+ls
+./install_server.sh 
+sudo ./install_server.sh 
 logout

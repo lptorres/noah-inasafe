@@ -11,6 +11,7 @@
 ~MSle0~/store
 
 # Command Line History (newest to oldest):
+:wq
 :q
 :q
 :wq
@@ -81,18 +82,19 @@
 	l
 
 # File marks:
-'0  1  0  ~/outfile.txt
-'1  127  0  /tmp/inasafe/2013-10-15/vagrant/impacts/tmpM3p6Qk.shp
-'2  105  4  ~/django/websafe/websafe/settings.py
-'3  22  1  ~/tornado/webSAFE/puppet/init.pp
-'4  48  0  ~/tornado/webSAFE/Vagrantfile
-'5  487  308  ~/.pip/pip.log
-'6  43  4  ~/django/websafe/layer_manager/views.py
-'7  1  0  ~/django/websafe/site_media/media/layers/quiapo-buildings20130905154136/buildings.shp.keywords
-'8  151  0  ~/django/websafe/websafe/settings.py
-'9  6  29  ~/django/websafe/layer_manager/admin.py
+'0  1  18  ~/tornado/db_app/testfile
+'1  1  0  ~/outfile.txt
+'2  127  0  /tmp/inasafe/2013-10-15/vagrant/impacts/tmpM3p6Qk.shp
+'3  105  4  ~/django/websafe/websafe/settings.py
+'4  22  1  ~/tornado/webSAFE/puppet/init.pp
+'5  48  0  ~/tornado/webSAFE/Vagrantfile
+'6  487  308  ~/.pip/pip.log
+'7  43  4  ~/django/websafe/layer_manager/views.py
+'8  1  0  ~/django/websafe/site_media/media/layers/quiapo-buildings20130905154136/buildings.shp.keywords
+'9  151  0  ~/django/websafe/websafe/settings.py
 
 # Jumplist (newest first):
+-'  1  18  ~/tornado/db_app/testfile
 -'  1  0  ~/outfile.txt
 -'  127  0  /tmp/inasafe/2013-10-15/vagrant/impacts/tmpM3p6Qk.shp
 -'  1  0  /tmp/inasafe/2013-10-15/vagrant/impacts/tmpM3p6Qk.shp
@@ -190,9 +192,14 @@
 -'  1  0  ~/django/webandgis/webandgis/urls.py
 -'  25  0  ~/django/webandgis/README.md
 -'  1  0  ~/django/webandgis/README.md
--'  25  0  ~/django/webandgis/README.md
 
 # History of marks within files (newest to oldest):
+
+> ~/tornado/db_app/testfile
+	"	1	18
+	^	1	19
+	.	1	18
+	+	1	18
 
 > ~/outfile.txt
 	"	1	0
