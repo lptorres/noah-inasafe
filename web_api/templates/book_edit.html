@@ -1,0 +1,18 @@
+{% extends "main.html" %}
+{% autoescape None %}
+
+{% block body %}
+<form method="POST">
+	ISBN <input type="text" name="isbn"
+		value="{{ book.get('isbn', '') }}"><br>
+	Title <input type="text" name="title"
+		value="{{ book.get('title', '') }}"><br>
+	Subtitle <input type="text" name="subtitle"
+		value="{{ book.get('subtitle', '') }}"><br>
+	Image <input type="text" name="image"
+		value="{{ book.get('image', '') }}"><br>
+	Author <input type="text" name="author"
+		value="{{ book.get('author', '') }}"><br>
+	<input type="submit" value="Save">
+</form>
+{% end %}

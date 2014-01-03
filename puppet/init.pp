@@ -36,7 +36,7 @@ class inasafe {
 }
 
 class django {
-  package {['django', 'djangorestframework', 'django-leaflet', 'pinax-theme-bootstrap', 'django-braces', 'django-smart-selects']:
+  package {['django', 'django-leaflet', 'pinax-theme-bootstrap', 'django-braces', 'django-smart-selects']:
     ensure => installed,
     provider => pip
   }
@@ -45,7 +45,7 @@ class django {
 
 class {'update':}
 class {'inasafe':}
-class {'django':}
+#class {'django':}
 
 #cloud-sptheme 
 #python-nosexcover

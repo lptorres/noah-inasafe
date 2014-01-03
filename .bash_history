@@ -1,334 +1,3 @@
-cd ..
-cd webSAFE/
-ls
-cd webapp/
-python main.py 
-logout
-ls
-cd ..
-ls
-cd vagrant/django/websafe_api/
-ls
-python manage.py runserver 0.0.0.0:5000
-yolk -l
-clear
-pip install django
-clear
-ls
-cd ..
-tar -xvzf Django-1.5.4.tar.gz 
-cd Django-1.5.4/
-ls
-python setup.py install
-ls
-clear
-sudo python setup.py install
-clear
-cd ..
-cd websafe_api/
-python manage.py runserver 0.0.0.0:5000
-clear
-ls
-vim websafe_api/settings.py
-sudo apt-get install vim
-logout
-pip install djangorestframework
-vim /home/vagrant/.pip/pip.log 
-sudo pip install djangorestframework
-cd django/websafe_api/
-python manage.py runserver 0.0.0.0:5000
-python manage.py runserver 0.0.0.0:5000
-clear
-sudo pip install smart-selects
-sudo pip install django-smart-selects
-sudo pip install django-braces
-python manage.py runserver 0.0.0.0:5000
-python manage.py syncdb
-python manage.py runserver 0.0.0.0:5000
-clear
-python
-python manage.py syncdb
-clear
-python manage.py syncdb
-python manage.py syncdb
-clear
-python manage.py syncdb
-python manage.py syncdb
-python manage.py syncdb
-python manage.py runserver 0.0.0.0:5000
-logout
-cd tornado/webSAFE/
-ls
-git pull
-git pull -f
-clear
-git reset --hard
-git pull
-cd webapp/
-python main.py 
-sudo pip install mapnik2
-clear
-sudo pip install boost
-cd ..
-vim Vagrantfile 
-ls
-vim puppet/init.pp 
-sudo apt-get install python-software-properties mapnik
-sudo apt-get update
-sudo apt-get install mapnik
-sudo add-apt-repository ppa:mapnik/v2.2.0
-sudo apt-get install python-software-properties
-sudo add-apt-repository ppa:mapnik/v2.2.0
-logout
-python
-clear
-python
-clear
-python
-psql template1
-sudo su postgres
-clear
-createdb example -U vagrant
-psql example
-python
-logout
-python
-clear
-psql example 
-createdb example -U vagrant
-psql
-psql example
-psql example
-logout
-ps -ef
-ps -ef | grep python
-logout
-psql example 
-python
-ls
-python cli.py 1
-python cli.py 1
-python cli.py 1
-python cli.py 1
-python bench.py 1
-python bench.py 1
-python bench.py 1
-python bench.py 10
-python bench.py 100
-python bench.py 1
-python bench.py 1000
-python bench.py 10000
-python bench.py 10000
-python bench.py 10000
-python bench.py 100000
-python bench.py 1
-python bench.py 1
-python bench.py 10
-python bench.py 100
-python
-python bench.py 1
-python bench.py 1
-python bench.py 100000
-clear
-python bench.py 1
-python bench.py 10
-python bench.py 100
-python bench.py 10000
-python bench.py 1
-python bench.py 10
-python bench.py 100
-python bench.py 1000
-python bench.py 10000
-python bench.py 1
-python bench.py 10
-python bench.py 100
-python bench.py 1000
-python bench.py 10000
-python
-python bench.py 100000
-python bench.py 1000000
-python bench.py 1
-python bench.py 1
-python bench.py 1
-python bench.py 1
-python bench.py 1
-python bench.py 10
-python bench.py 10
-python bench.py 100
-python bench.py 1000
-python bench.py 10000
-python bench.py 1
-python bench.py 1
-python bench.py 10
-python bench.py 100
-python bench.py 100
-python bench.py 100
-python bench.py 100
-python bench.py 100
-python bench.py 100
-python bench.py 1000
-python bench.py 10000
-python bench.py 100000
-python bench.py 100000
-clear
-python bench.py 1000000
-python bench.py 1000000
-python bench.py
-python bench.py
-python bench.py 1
-python bench.py 1
-python bench.py 1
-python bench.py 1
-python bench.py 1
-logout
-psql example
-ls
-cd django/websafe
-ls
-clear
-python manage.py syncdb
-logout
-createdb dev
-psql dev
-psql dev
-logout
-psql dev
-python
-psql dev
-psql dev
-quit()
-logout
-curl http://localhost:5000/
-curl http://localhost:8000/
-logout
-python
-psql dev
-python
-clear
-python
-python
-python
-python
-psql dev
-cd tornado/db_app/
-python main.py 
-python main.py 
-sudo pip install tornado
-python main.py 
-python main.py 
-python main.py 
-python main.py 
-python main.py 
-python main.py 
-python main.py 
-python main.py 
-python main.py 
-git add -A
-cd ..
-cd ..
-ls
-git add -A
-git commit -m "Got a simple tornado application that can query the pg database working"
-git push
-python
-ls
-cd ..
-ls
-cd vagrant/data/
-ls
-python
-clear
-python
-python
-clear
-python
-cd..
-cd ..
-cd tornado/db_app/
-python main.py 
-python main.py 
-python main.py 
-python main.py 
-clear
-python main.py 
-python main.py 
-git add -a
-cd ~/
-git add -A
-git commit -m "Refactored the tornado app a little to work with 2 get parameters instead of just 1"
-git push
-logout
-curl -G -d "q='Megan Young'" "http://localhost:5000"
-logout
-cd tornado/
-cd db_app/
-python twitter_sync.py 
-python twitter_sync.py 
-python twitter_sync.py 
-python
-sudo pip install yolk
-yolk -l
-python test.py 
-python test.py 
-python test.py 
-python main.py 
-python main.py 
-python main.py 
-python main.py 
-python
-python main.py 
-python main.py 
-python
-clear
-python
-python
-python main.py 
-python main.py 
-python main.py 
-cd ~
-ls
-git add -A
-git add -A
-git commit -m "Added a LayerHandler which returns the JSON representation of one Layer. Also refactored the CalculateHandler to return the JSON representation of the exposure and hazard layers for now. Both still use the 'book' entity though. Also updated the gitignore file."
-git push
-logout
-logout
-ls
-cd tornado/
-ls
-cd db_app/
-ls
-clear
-rm -rf models.pyc 
-ls
-clear
-ls
-ls
-python
-python
-clear
-python
-python
-clear
-python
-logout
-psql dev
-clear
-ls
-cd data/
-pws
-pwd
-psql dev
-clear
-cd ~/django/websafe/
-ls
-python manage.py runserver 0.0.0.0:5000
-vim websafe/settings.py
-sudo pip install pinax-theme-bootstrap
-python manage.py syncdb
-python manage.py syncdb
-python manage.py syncdb
-python manage.py syncdb
 clear
 cd ..
 ls
@@ -497,4 +166,335 @@ cd utils/
 ls
 ./install_server.sh 
 sudo ./install_server.sh 
+logout
+python
+cd tornado/db_app/
+python main.py 
+python
+clear
+vim testfile
+ls
+python
+ls
+clear
+ls
+clear
+cd /tmp/inasafe/2013-10-18/vagrant/impacts/
+ls
+python
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ks
+ls
+cd ~/tornado/db_app/
+ls
+cd ~/
+cd tornado/web_api/
+ls
+python main.py 
+cd ~/
+git add -A
+git add -A
+git commit -m "Changed the package name, refactored long code, and got caching with redis to work with the api"
+git push
+logout
+cd tornado/web_api/
+ls
+python main.py 
+clear
+logout
+ls
+ls
+clear
+ls
+cd django/
+ls
+cd websafe/
+ls
+clear
+ls
+cd safe/
+LS
+ls
+clear
+cd ..
+ls
+clear
+python
+logout
+cd django/websafe/
+ls
+clear
+python manage.py runserver 0.0.0.0:5000
+python manage.py runserver 0.0.0.0:5000
+pip install account
+pip install django-user-accounts
+clear
+sudo pip install pinax_theme_bootstrap
+sudo pip install django_forms_bootstrap
+sudo pip install leaflet
+sudo pip install django-leaflet
+sudo pip install django_smart_selects
+sudo pip install django-user-accounts
+python manage.py runserver 0.0.0.0:5000
+ls
+sudo apt-get update
+ifconfig
+sudo apt-get update
+logout
+sudo apt-get install python-software-properties
+sudo apt-get update
+logout
+ls
+cd django/websafe/
+ls
+clear
+python manage.py runserver 0.0.0.0:5000
+la
+ls
+clear
+sudo pip install pinax_theme_bootstrap
+sudo pip install pinax-theme-bootstrap
+sudo pip install pinax-theme-bootstrap --upgrade
+sudo pip install pinax_theme_bootstrap --upgrade
+clear
+python manage.py runserver 0.0.0.0:5000
+sudo pip install django_forms_bootstrap
+  Cannot fetch index base URL http://pypi.python.org/simple/
+sudo -E pip install django_forms_bootstrap
+logout
+sudo apt-get update
+logout
+sudo pip install pinax-theme-bootstrap
+sudo pip install django-user-accounts
+sudo pip install django-forms-bootstrap
+sudo pip install metron
+sudo pip install eventlog
+sudo pip install django-jsonfield
+cd django/websafe/
+ls
+clear
+sudo su postgres
+clear
+createdb vagrant
+python manage.py syncdb
+createdb websafe
+python manage.py syncdb
+python manage.py runserver 0.0.0.0:5000
+sudo pip install django-braces
+sudo pip install django-braces
+python manage.py runserver 0.0.0.0:5000
+sudo pip install django-user-accounts
+sudo pip install django-accounts
+sudo pip install django-accounts
+sudo pip install pinax-theme-bootstrap
+sudo pip install django-user-accounts
+sudo pip install django-forms-bootstrap
+sudo pip install metron
+sudo pip install eventlog
+sudo pip install django-jsonfield
+python manage.py runserver 0.0.0.0:5000
+python manage.py collectstatic
+ls
+mkdir static
+mkdir static
+python manage.py collectstatic
+python manage.py runserver 0.0.0.0:5000
+clear
+python manage.py syncdb
+dropdb websafe
+createdb websafe
+python manage.py syncdb
+python manage.py runserver 0.0.0.0:5000
+logout
+ls
+cd tornado/web_api/safe/
+ls
+clear
+python
+ls
+clear
+ls impact_functions/
+clear
+python
+cd ..
+ls
+clear
+python
+ls
+cd ..
+ls
+cd ..
+ls
+cd data/
+ls
+clear
+cd ..
+cd tornado/web_api/
+ls
+python
+clear
+python
+ls
+clear
+cd ~/data/
+ls
+ogr2ogr -clipsrc 120.9451514 14.540276499 121.042532875 14.6386086512 clipped.shp flood.shp
+ls
+rm clipped.*
+rm clipped.*
+ls
+clear
+cd ..
+ogr2ogr -clipsrc 120.9451514 14.540276499 121.042532875 14.6386086512 clipped.shp data/flood.shp
+ls
+clear
+rm clipped.*
+ls
+clear
+python
+ls
+ls data/
+ls data/
+clear
+python
+ls
+clear
+cd tornado/web_api/
+ls
+python
+ls
+clear
+ls
+cd ~/django/websafe/
+ls
+clear
+python manage.py runserver 0.0.0.0:5000
+ls
+clear
+createdb dev
+psql dev
+cd ~/tornado/web_api/
+ls
+python main.py 
+cd ~/redis-2.6.16/
+ls
+clear
+ls
+cat README 
+sudo make install
+make install
+sudo apt-get install make
+sudo make install
+cd utils/
+./install_server.sh 
+sudo ./install_server.sh 
+logout
+cd tornado/web_api/
+ls
+python main.py 
+sudo pip install redis-py
+sudo pip install redis
+sudo pip install redis
+sudo pip --use-mirrors install redis
+pip --user-mirrors install redis
+sudo easy_install redis
+python main.py 
+python main.py 
+python main.py 
+python main.py 
+python main.py 
+python main.py 
+python main.py 
+logout
+ls
+cd data/
+ls
+clear
+python
+logout
+ls
+cd d
+cd data/
+ls
+clear
+python
+clear
+ls
+python
+clear
+ls
+psql websafe
+dropdb websafe
+clear
+ls
+psql dev
+clear
+cd ~/tornado/web_api/
+ls
+clear
+python main.py 
+logout
+psql websafe
+psql dev
+ls
+ls data/
+cd tornado/web_api/
+ls
+clear
+python main.py 
+logout
+ls
+cd data/
+ls
+ls
+clear
+psql dev
+ls
+clear
+ls
+cd ..
+ls
+cd django/websafe/
+ls
+clear
+python manage.py runserver 0.0.0.0:5000
+createdb websafe
+python manage.py syncdb
+python manage.py runserver 0.0.0.0:5000
+clear
+cd ..
+cd ..
+ls
+rm -rf django/
+ls
+clear
+cat huhu.txt 
+ls
+cat outfile.txt 
+rm huhu.txt 
+rm outfile.txt 
+ls
+clear
+ls
+ls
+clear
+cd tornado/web_api/
+ls
+python
+ls
+clear
+ls
+cd ~/data/
+ls
+python multipoly2poly.py buildings.shp 
+python multipoly2poly.py flood.shp 
+cd ~/tornado/web_api/
+python
 logout

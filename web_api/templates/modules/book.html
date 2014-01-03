@@ -1,0 +1,11 @@
+<div class="book" style="overflow: auto">
+  <h3 class="book_title">{{ book["title"] }}</h3>
+  {% if book["subtitle"] != "" %}
+		<h4 class="book_subtitle">{{ book["subtitle"] }}</h4>
+	{% end %}
+  <img src="{{ book["image"] }}" class="book_image"/>
+	<div class="book_details">
+	  <h5>Description:</h5>
+		<p><a href="/edit/{{ book['isbn'] }}">Edit</a></p>
+	</div>
+</div>
